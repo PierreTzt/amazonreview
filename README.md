@@ -1,3 +1,5 @@
+0.3 -> mise en forme du formulaire
+
 0.2 -> ajout du css
 
 0.1 -> ajout de la base de donnée
