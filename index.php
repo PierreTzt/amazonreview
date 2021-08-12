@@ -33,9 +33,10 @@
         <tr>
           <th>Nom</th>
           <th>Prix</th>
+          <th>URL</th>
           <th>Date achat</th>
           <th>Date avis</th>
-          <th>Avis poste</th>
+          <th>Etat</th>
         </tr>
       </thead>
     </table>
@@ -52,7 +53,7 @@
 		while ($ligne = $resultat -> fetch_assoc()) {
 
 
-        echo '<td>'. $ligne['nom'] .'</td><td>'. $ligne['prix'] .'</td><td>'. $ligne['date_achat'] .'</td><td>'. $ligne['date_review'] .'</td><td>'. $ligne['review_poste'] .'</td></tr>';
+        echo '<td>'. $ligne['nom'] .'</td><td>'. $ligne['prix'] .'</td><td><a href='. $ligne['url'] .'><img scr="img/logo.png" width="30" height="30"></a></td><td>'. $ligne['date_achat'] .'</td><td>'. $ligne['date_review'] .'</td><td>'. $ligne['etat'] .'</td></tr>';
         }
 		$mysqli->close();
 		?>

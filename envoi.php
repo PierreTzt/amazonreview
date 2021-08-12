@@ -6,9 +6,9 @@
     
     $date_achat = $_POST["date_achat"];
     $date_review = $_POST["date_review"];
-    $review_poste = $_POST["review_poste"];
     $nom = $_POST["nom"];
     $prix = $_POST["prix"];
+    $url = $_POST["url"];
 
     try{
         //On se connecte à la BDD
@@ -17,13 +17,13 @@
     
         //On insère les données reçues
         $sth = $dbco->prepare("
-            INSERT INTO produits(date_achat, date_review, review_poste, nom, prix)
-            VALUES(:date_achat, :date_review, :review_poste, :nom, :prix)");
+            INSERT INTO produits(date_achat, date_review, nom, prix, url)
+            VALUES(:date_achat, :date_review, :nom, :prix, :url)");
         $sth->bindParam(':date_achat',$date_achat);
         $sth->bindParam(':date_review',$date_review);
-        $sth->bindParam(':review_poste',$review_poste);
         $sth->bindParam(':nom',$nom);
         $sth->bindParam(':prix',$prix);
+        $sth->bindParam(':url',$url);
         $sth->execute();
         
         //On renvoie l'utilisateur vers la page de remerciement

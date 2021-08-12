@@ -27,6 +27,10 @@
                     <label for="date_commande">Prix : <span class="req">*</span></label>
                     <input type="text" id="prix" name="prix" class="input-field" required="true">
                     </p>
+                    <p>   
+                    <label for="url">URL</label>
+                    <input type="text" id="url" name="url" class="input-field" required="true">
+                    </p>
                     </li>
                     <p class="left">   
                     <label for="date_commande">Date de commande : <span class="req">*</span></label>
@@ -38,12 +42,12 @@
                     </p>
                     </li>
                     <div class="center-btn" style="position:relevant; height:5vh;">
-                    <li>Avis posté 
-                    <input type="radio" id="oui" name="review_poste" value="oui" checked="checked" class="input-field" required="true"><label for="oui">Oui</label>
-                    <input type="radio" id="non" name="review_poste" value="non" class="input-field" required="true"><label for="nonoui">Non</label>
-                    </li>
                 </ul>
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
             <div class="center-btn" style="position:relevant; height:5vh;">
                 <li>
                 <input class="btn btn-submit" type="submit" value="Envoyer">

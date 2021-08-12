@@ -1,3 +1,7 @@
+0.5 -> changement bdd
+0.5 -> changement affichage etat
+0.5 -> rajout du lien direct du produit
+
 0.4 -> mise en forme de l'index avec les commandes en cour
 
 0.3 -> mise en forme du formulaire
