@@ -1,46 +1,48 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
+
     <head>
         <title>Page de traitement</title>
         <meta charset="utf-8">
-		<link rel="stylesheet" href="css/theme.css">
-		<link rel="stylesheet" href="css/theme-elements.css">
-		<link rel="stylesheet" href="css/theme-blog.css">
-		<link rel="stylesheet" href="css/theme-shop.css">
+		<link rel="stylesheet" href="css/style.css">
+        <script type='text/javascript' src='js/script.js'></script>
     </head>
-    <body>
-    <div class="col-lg-9 order-1 order-lg-2">
 
-<div class="tab-pane tab-pane-navigation active" id="formsStyleDefault">
-
-    <h4 class="mb-3">Default</h4>
-    <div class="card mb-4">
-        <div class="card-body">
-            <div class="row">
-                <div class="col">
-        
-        <form class="contact-form" action="envoi.php" method="post">
-        <div class="row">
-            <div class="form-group col-lg-6">
-                <label for="date_commande" class="form-label mb-1 text-2">>Date de commande : </label>
-                <input type="date" id="date_achat" name="date_achat">
+<body>
+    <div class="contact container shadow" id="contact_form">        
+        <div class="contact row header">
+            <h2>Suivi de commande</h2>
+            <div id="contact_results"></div>
+        </div>
+    <form action="envoi.php" method="post">
+        <div class="contact row body" id="contact_body">
+            <div class="contact-elements">
+                <ul>
+                    <li>
+                    <p class="left">   
+                    <label for="date_commande">Date de commande : <span class="req">*</span></label>
+                    <input type="date" id="date_achat" name="date_achat" class="input-field" required="true">
+                    </p>
+                    <p class="pull-right">
+                    <label for="date_review">Date de review : <span class="req">*</span></label>
+                    <input type="date" id="date_review" name="date_review" class="tel-number-field long" required="true">
+                    </p>
+                    </li>
+                    <div class="center-btn" style="position:relevant; height:5vh;">
+                    <li>
+                    <label for="review_poste">Avis posté <span class="req">*</span></label>
+                    <input type="text" id="review_poste" name="review_poste" class="input-field" required="true">
+                    </li>
+                </ul>
             </div>
-            <div class="form-group col-lg-6">
-                <label for="date_review" class="form-inline">>Date de review : </label>
-                <input type="date" id="date_review" name="date_review">
-            </div>
-            <div class="form-group col-lg-6">
-                <label for="review_poste" class="form-inline">>Avis posté</label>
-                <input type="text" id="review_poste" name="review_poste">
-            </div>
-            <div class="sm:ml-20 sm:pl-5 mt-5" id="submit">
-                <input class="btn btn-primary" type="submit" value="Envoyer">
+            <div class="center-btn" style="position:relevant; height:5vh;">
+                <li>
+                <input class="btn btn-submit" type="submit" value="Envoyer">
+                </li>
             </div>
         </div>
-        </form>
+    </form>
 </div>
-</div>
-
 
         <?php
 		$mysqli = new mysqli("localhost", "root", "", "amazonreview");
