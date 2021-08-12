@@ -4,56 +4,63 @@
     <head>
         <title>Page de traitement</title>
         <meta charset="utf-8">
-		<link rel="stylesheet" href="css/style.css">
-        <script type='text/javascript' src='js/script.js'></script>
+		<link rel="stylesheet" href="css/index.css">
+        <script type='text/javascript' src='js/index.js'></script>
     </head>
 
 <body>
-    <div class="contact container shadow" id="contact_form">        
-        <div class="contact row header">
-            <h2>Suivi de commande</h2>
-            <div id="contact_results"></div>
-        </div>
-    <form action="envoi.php" method="post">
-        <div class="contact row body" id="contact_body">
-            <div class="contact-elements">
-                <ul>
-                    <li>
-                    <p class="left">   
-                    <label for="date_commande">Date de commande : <span class="req">*</span></label>
-                    <input type="date" id="date_achat" name="date_achat" class="input-field" required="true">
-                    </p>
-                    <p class="pull-right">
-                    <label for="date_review">Date de review : <span class="req">*</span></label>
-                    <input type="date" id="date_review" name="date_review" class="tel-number-field long" required="true">
-                    </p>
-                    </li>
-                    <div class="center-btn" style="position:relevant; height:5vh;">
-                    <li>
-                    <label for="review_poste">Avis posté <span class="req">*</span></label>
-                    <input type="text" id="review_poste" name="review_poste" class="input-field" required="true">
-                    </li>
-                </ul>
-            </div>
-            <div class="center-btn" style="position:relevant; height:5vh;">
-                <li>
-                <input class="btn btn-submit" type="submit" value="Envoyer">
-                </li>
-            </div>
-        </div>
-    </form>
-</div>
+    <a href='ajout.php'> ajouter une commande</a>
+    <br>
 
-        <?php
+    <?php
 		$mysqli = new mysqli("localhost", "root", "", "amazonreview");
 		$mysqli -> set_charset("utf8");
-		$requete = "SELECT * FROM achat";
+		$requete = "SELECT * FROM produits";
 		$resultat = $mysqli -> query($requete);
 		while ($ligne = $resultat -> fetch_assoc()) {
-			echo $ligne['date_achat'] . ' ' . $ligne['date_review'] . ' ' . $ligne['review_poste'] . '
-			<br>';
+			//echo $ligne['date_achat'] . ' ' . $ligne['date_review'] . ' ' . $ligne['review_poste'] . '
+			//<br>';
 		}
 		$mysqli->close();
 		?>
-    </body>
+
+    <section>
+
+  <h1>Commande en cour</h1>
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Prix</th>
+          <th>Date achat</th>
+          <th>Date avis</th>
+          <th>Avis poste</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+        <tr>
+        <?php
+		$mysqli = new mysqli("localhost", "root", "", "amazonreview");
+		$mysqli -> set_charset("utf8");
+		$requete = "SELECT * FROM produits";
+		$resultat = $mysqli -> query($requete);
+		while ($ligne = $resultat -> fetch_assoc()) {
+
+
+        echo '<td>'. $ligne['nom'] .'</td><td>'. $ligne['prix'] .'</td><td>'. $ligne['date_achat'] .'</td><td>'. $ligne['date_review'] .'</td><td>'. $ligne['review_poste'] .'</td></tr>';
+        }
+		$mysqli->close();
+		?>
+
+      </tbody>
+    </table>
+  </div>
+</section>
+
+</body>
 </html>
