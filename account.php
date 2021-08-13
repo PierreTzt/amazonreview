@@ -40,11 +40,9 @@ require 'inc/header.php';
           <th>#</th>
           <th>Nom</th>
           <th>Prix</th>
-          <th>URL</th>
-          <th>Date achat</th>
-          <th>Date avis</th>
           <th>Etat</th>
-          <th>Modif</th>
+          <th>Modifier</th>
+          <th>Lien Amazon</th>
         </tr>
       </thead>
       <tbody>
@@ -56,7 +54,7 @@ require 'inc/header.php';
 		$resultat = $mysqli -> query($requete);
 		while ($ligne = $resultat -> fetch_assoc()) {
 
-      echo '<td>'. $ligne['id'] .'</td><td>'. $ligne['nom'] .'</td><td>'. $ligne['prix'] .'</td><td><a href='. $ligne['url'] .'&tag=infoelections-21><img scr="img/logo.png" width="30" height="30"></a></td><td>'. $ligne['date_achat'] .'</td><td>'. $ligne['date_review'] .'</td><td>'. $ligne['etat'] .'</td><td><a href="view.php?id='.$ligne['id'].'">Afficher cette commande</a></td></tr>';
+      echo '<td>'. $ligne['id'] .'</td><td>'. $ligne['nom'] .'</td><td>'. $ligne['prix'] .'</td><td>'. $ligne['etat'] .'</td><td><a href="view.php?id='.$ligne['id'].'"><i class="fas fa-edit"></i></a></td><td><a href='. $ligne['url'] .'&tag=infoelections-21><i class="fab fa-amazon" style="color:orange"></i></a></td></tr>';
         }
 		$mysqli->close();
 		?>

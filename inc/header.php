@@ -13,6 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/app.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/457a9777f7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>

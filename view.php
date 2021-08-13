@@ -29,7 +29,7 @@ try
       echo "Échec : " . $e->getMessage();
    }
   
-    $req = $db->prepare('SELECT nom, prix, date_achat, url FROM produits WHERE id = ?');
+    $req = $db->prepare('SELECT nom, prix, date_achat, url, demande, revente, remboursement_complet, frais_paypal, date_review, etat FROM produits WHERE id = ?');
     $req->execute(array($_GET['id']));
 		
     while ($infos = $req->fetch())
@@ -40,31 +40,41 @@ try
 	<div>
 		<h2>Commande du <?php echo $infos['nom'];?></h2>
 	</div>
-	
+	<button type="submit" class="btn btn-primary">Modifier</button>
 	<div>
         <div>
-			<h4>Date de la commande</h4>
+			<h4><i class="far fa-calendar-alt"></i> Date de la commande</h4>
 			<p><?php echo $infos['date_achat'];?></p>	
 		</div>
         <div>
-			<h4>Prix du produit</h4>
+			<h4><i class="fas fa-money-check"></i> Prix du produit</h4>
 			<p><?php echo $infos['prix'];?></p>	
 		</div>
         <div>
-			<h4>Lien du produit</h4>
+			<h4><i class="fab fa-amazon"></i> Lien du produit</h4>
 			<p><a href=<?php echo $infos['url'];?>&tag=infoelections-21><?php echo $infos['url'];?></a></p>	
 		</div>
         <div>
-			<h4>Date de la commande</h4>
-			<p><?php echo $infos['date_achat'];?></p>	
+			<h4><i class="fas fa-search"></i> Type de demande</h4>
+			<p><?php echo $infos['demande'];?></p>	
 		</div>
         <div>
-			<h4>Date de la commande</h4>
-			<p><?php echo $infos['date_achat'];?></p>	
+			<h4><i class="far fa-check-circle"></i> Prévu d'être revendu</h4>
+			<p><?php echo $infos['revente'];?></p>	
 		</div>
         <div>
-			<h4>Date de la commande</h4>
-			<p><?php echo $infos['date_achat'];?></p>	
+			<h4><i class="fas fa-coins"></i> Remboursement complet</h4>
+			<p><?php echo $infos['remboursement_complet'];?></p>	
+		</div>
+        <div>
+			<h4><i class="fab fa-paypal"></i> Frais PayPal</h4>
+			<p><?php echo $infos['frais_paypal'];?></p>	
+		</div>        <div>
+			<h4><i class="fas fa-pen"></i> Date de la review prevu</h4>
+			<p><?php echo $infos['date_review'];?></p>	
+		</div>        <div>
+			<h4><i class="far fa-pause-circle"></i> Etat de la commande</h4>
+			<p><?php echo $infos['etat'];?></p>	
 		</div>
 	</div>
 </div>
@@ -84,8 +94,5 @@ catch(Exception $e)
 }
 
 ?>
-</form>
-</p>
-
 
 <?php require 'inc/footer.php'; ?>
