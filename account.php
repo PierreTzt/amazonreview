@@ -56,8 +56,7 @@ require 'inc/header.php';
 		$resultat = $mysqli -> query($requete);
 		while ($ligne = $resultat -> fetch_assoc()) {
 
-      echo '<td>'. $ligne['id'] .'</td><td>'. $ligne['nom'] .'</td><td>'. $ligne['prix'] .'</td><td><a href='. $ligne['url'] .'><img scr="img/logo.png" width="30" height="30"></a></td><td>'. $ligne['date_achat'] .'</td><td>'. $ligne['date_review'] .'</td><td>'. $ligne['etat'] .'</td><td><a href="view.php?id='.$ligne['id'].'">Afficher cette commande</a></td></tr>';
-
+      echo '<td>'. $ligne['id'] .'</td><td>'. $ligne['nom'] .'</td><td>'. $ligne['prix'] .'</td><td><a href='. $ligne['url'] .'&tag=infoelections-21><img scr="img/logo.png" width="30" height="30"></a></td><td>'. $ligne['date_achat'] .'</td><td>'. $ligne['date_review'] .'</td><td>'. $ligne['etat'] .'</td><td><a href="view.php?id='.$ligne['id'].'">Afficher cette commande</a></td></tr>';
         }
 		$mysqli->close();
 		?>

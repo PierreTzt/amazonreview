@@ -52,7 +52,7 @@ try
 		</div>
         <div>
 			<h4>Lien du produit</h4>
-			<p><a href=<?php echo $infos['url'];?>><?php echo $infos['url'];?></a></p>	
+			<p><a href=<?php echo $infos['url'];?>&tag=infoelections-21><?php echo $infos['url'];?></a></p>	
 		</div>
         <div>
 			<h4>Date de la commande</h4>
