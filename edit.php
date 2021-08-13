@@ -78,9 +78,10 @@ try
           <li>
           <input class="btn btn-submit" type="submit" value="Envoyer">
 
-
+          </form>
           <?php
     } 
+
 
 // Fin de la boucle pour l'affichage des donnée dans la base de donnée
     $req->closeCursor();

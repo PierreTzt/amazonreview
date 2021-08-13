@@ -1,3 +1,5 @@
+1.0 -> ajout de la page pour ajouter les commandes
+
 0.9 -> creation de l'index avec le login
 
 0.8 -> mise en page de l'affichage des commandes

@@ -31,7 +31,7 @@ require 'inc/header.php';
         </div>
         <button class="btn btn-primary">Changer mon mot de passe</button>
     </form>
-
+<a href=add.php>Ajouter une commande</a>
 <h1>Commande en cour</h1>
   <div class="tbl-header">
     <table class="table table-hover">
