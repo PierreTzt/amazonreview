@@ -1,3 +1,6 @@
+0.6 -> creation d'un espace membre avec verif par email
+0.6 -> liaison des commandes a l'utilisateur
+
 0.5 -> changement bdd
 0.5 -> changement affichage etat
 0.5 -> rajout du lien direct du produit
