@@ -1,3 +1,6 @@
+0.7 -> page pour l'affichage des commandes
+0.7 -> listing des commandes de l'utilisateur
+
 0.6 -> creation d'un espace membre avec verif par email
 0.6 -> liaison des commandes a l'utilisateur
 

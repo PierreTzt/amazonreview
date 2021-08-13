@@ -14,6 +14,9 @@ if(!empty($_POST)){
     }
 
 }
+
+$utilisateur = $_SESSION['auth']->id;
+
 require 'inc/header.php';
 ?>
 
@@ -28,22 +31,13 @@ require 'inc/header.php';
         </div>
         <button class="btn btn-primary">Changer mon mot de passe</button>
     </form>
-<?php
-    $utilisateur = $_SESSION['auth']->id;
-?>
 
-
-    <section>
-    <?php
-    echo $utilisateur
-?>
-
-
-  <h1>Commande en cour</h1>
+<h1>Commande en cour</h1>
   <div class="tbl-header">
-    <table cellpadding="0" cellspacing="0" border="0">
+    <table class="table table-hover">
       <thead>
         <tr>
+          <th>#</th>
           <th>Nom</th>
           <th>Prix</th>
           <th>URL</th>
@@ -53,10 +47,6 @@ require 'inc/header.php';
           <th>Modif</th>
         </tr>
       </thead>
-    </table>
-  </div>
-  <div class="tbl-content">
-    <table cellpadding="0" cellspacing="0" border="0">
       <tbody>
         <tr>
         <?php
@@ -66,8 +56,8 @@ require 'inc/header.php';
 		$resultat = $mysqli -> query($requete);
 		while ($ligne = $resultat -> fetch_assoc()) {
 
+      echo '<td>'. $ligne['id'] .'</td><td>'. $ligne['nom'] .'</td><td>'. $ligne['prix'] .'</td><td><a href='. $ligne['url'] .'><img scr="img/logo.png" width="30" height="30"></a></td><td>'. $ligne['date_achat'] .'</td><td>'. $ligne['date_review'] .'</td><td>'. $ligne['etat'] .'</td><td><a href="view.php?id='.$ligne['id'].'">Afficher cette commande</a></td></tr>';
 
-        echo '<td>'. $ligne['nom'] .'</td><td>'. $ligne['prix'] .'</td><td><a href='. $ligne['url'] .'><img scr="img/logo.png" width="30" height="30"></a></td><td>'. $ligne['date_achat'] .'</td><td>'. $ligne['date_review'] .'</td><td>'. $ligne['etat'] .'</td><td><a href="commande_edit.php?id='.$ligne['id'].'">Modifier cette commande</a></td></tr>';
         }
 		$mysqli->close();
 		?>
