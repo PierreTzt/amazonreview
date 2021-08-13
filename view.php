@@ -29,18 +29,17 @@ try
       echo "Échec : " . $e->getMessage();
    }
   
-    $req = $db->prepare('SELECT nom, prix, date_achat, url, demande, revente, remboursement_complet, frais_paypal, date_review, etat FROM produits WHERE id = ?');
+    $req = $db->prepare('SELECT id, nom, prix, date_achat, url, demande, revente, remboursement_complet, frais_paypal, date_review, etat FROM produits WHERE id = ?');
     $req->execute(array($_GET['id']));
 		
     while ($infos = $req->fetch())
       {
       ?>
-
 <div>
 	<div>
 		<h2>Commande du <?php echo $infos['nom'];?></h2>
 	</div>
-	<button type="submit" class="btn btn-primary">Modifier</button>
+<?php echo '<a href="edit.php?id='.$infos['id'].'">Modifier ce site</a>';?>
 	<div>
         <div>
 			<h4><i class="far fa-calendar-alt"></i> Date de la commande</h4>
