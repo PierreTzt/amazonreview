@@ -30,50 +30,50 @@ require 'inc/header.php';
           <ul>
               <p>   
               <label for="date_commande">Nom du produit : <span class="req">*</span></label>
-              <input type="text" id="nom" name="nom" class="input-field" required="true">
+              <input type="text" id="nom" name="nom"  class="form-control" required="true">
               </p>
               <p>   
               <label for="date_commande">Prix du produit : <span class="req">*</span></label>
-              <input type="text" id="prix" name="prix" class="input-field" required="true">
+              <input type="text" id="prix" name="prix"  class="form-control" required="true">
               </p>
               <p>   
               <label for="url">Lien du produit</label>
-              <input type="text" id="url" name="url" class="input-field">
+              <input type="text" id="url" name="url"  class="form-control">
               </p>
               <p>   
               <label for="date_commande">Date de commande : <span class="req">*</span></label>
-              <input type="date" id="date_achat" name="date_achat" class="input-field" required="true">
+              <input type="date" id="date_achat" name="date_achat"  class="form-control" required="true">
               </p>
               <p>
               <label for="date_review">Date de review : <span class="req">*</span></label>
-              <input type="date" id="date_review" name="date_review" class="tel-number-field long" required="true">
+              <input type="date" id="date_review" name="date_review"  class="form-control" required="true">
               </p>
               <p>   
               <label for="url">Type de demande</label>
-              <input type="text" id="demande" name="demande" class="input-field">
+              <input type="text" id="demande" name="demande"  class="form-control">
               </p>
               <p>   
               <label for="url">Prévu d'etre revendu</label>
-              <input type="text" id="revente" name="revente" class="input-field">
+              <input type="text" id="revente" name="revente"  class="form-control">
               </p>
               <p>   
               <label for="url">Remboursement complet</label>
-              <input type="text" id="remboursement_complet" name="remboursement_complet" class="input-field">
+              <input type="text" id="remboursement_complet" name="remboursement_complet"  class="form-control">
               </p>
               <p>   
               <label for="url">Frais PayPal</label>
-              <input type="text" id="frais_paypal" name="frais_paypal" class="input-field">
+              <input type="text" id="frais_paypal" name="frais_paypal" class="form-control">
               </p>
               <p>   
               <label for="url">Etat de la commande</label>
-              <input type="text" id="etat" name="etat" class="input-field">
+              <input type="text" id="etat" name="etat" class="form-control">
               <?php echo '<input id="username" name="username" type="hidden" value="' .$_SESSION['auth']->id. '">';?>
               </p>
               <div class="center-btn" style="position:relevant; height:5vh;">
           </ul>
       </div>
       <div class="center-btn" style="position:relevant; height:5vh;">
-          <input class="btn btn-submit" type="submit" value="Envoyer">
+          <input class="btn btn-primary" type="submit" value="Envoyer">
           </form>
           
 

@@ -1,3 +1,5 @@
+1.2-> mise a jour du formulaire d'ajout de commande
+
 1.1 -> modification du menu
 1.1 -> rajout du gitignore
 1.1 -> page de toutes les commandes
