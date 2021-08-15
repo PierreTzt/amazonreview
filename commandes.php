@@ -22,16 +22,7 @@ require 'inc/header.php';
 
     <h1>Bonjour <?= $_SESSION['auth']->username; ?></h1>
 
-    <form action="" method="post">
-        <div class="form-group">
-            <input class="form-control" type="password" name="password" placeholder="Changer de mot de passe"/>
-        </div>
-        <div class="form-group">
-            <input class="form-control" type="password" name="password_confirm" placeholder="Confirmation du mot de passe"/>
-        </div>
-        <button class="btn btn-primary">Changer mon mot de passe</button>
-    </form>
-<h1>Les 5 dernieres commandes</h1>
+<h1>Commande en cour</h1>
   <div class="tbl-header">
     <table class="table table-hover">
       <thead>
@@ -57,11 +48,12 @@ require 'inc/header.php';
         }
 		$mysqli->close();
 		?>
+
       </tbody>
     </table>
   </div>
 </section>
 
-<a href=commandes.php>voir toutes les commandes</a>
+
 
 <?php require 'inc/footer.php'; ?>

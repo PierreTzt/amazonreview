@@ -32,6 +32,7 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <?php if (isset($_SESSION['auth'])): ?>
+                    <li><a href="add.php">Ajouter une commande</a></li>
                     <li><a href="logout.php">Se déconnecter</a></li>
                 <?php else: ?>  
                     <li><a href="register.php">S'inscrire</a></li>

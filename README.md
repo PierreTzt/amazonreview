@@ -1,3 +1,8 @@
+1.1 -> modification du menu
+1.1 -> rajout du gitignore
+1.1 -> page de toutes les commandes
+1.1 -> changement de la liste des commandes pour affiché uniquement les 5 dernieres
+
 1.0 -> ajout de la page pour ajouter les commandes
 
 0.9 -> creation de l'index avec le login
