@@ -40,7 +40,7 @@ require 'inc/header.php';
         <?php
 		$mysqli = new mysqli("localhost", "root", "", "amazonreview");
 		$mysqli -> set_charset("utf8");
-		$requete = "SELECT * FROM produits WHERE username=$utilisateur";
+		$requete = "SELECT * FROM produits WHERE username=$utilisateur ORDER BY id DESC";
 		$resultat = $mysqli -> query($requete);
 		while ($ligne = $resultat -> fetch_assoc()) {
 

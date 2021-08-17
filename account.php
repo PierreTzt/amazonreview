@@ -22,7 +22,7 @@ require 'inc/header.php';
 
     <h1>Bonjour <?= $_SESSION['auth']->username; ?></h1>
 
-    <form action="" method="post">
+    <!--<form action="" method="post">
         <div class="form-group">
             <input class="form-control" type="password" name="password" placeholder="Changer de mot de passe"/>
         </div>
@@ -30,7 +30,7 @@ require 'inc/header.php';
             <input class="form-control" type="password" name="password_confirm" placeholder="Confirmation du mot de passe"/>
         </div>
         <button class="btn btn-primary">Changer mon mot de passe</button>
-    </form>
+    </form>-->
 <h1>Les 5 dernieres commandes</h1>
   <div class="tbl-header">
     <table class="table table-hover">
@@ -48,7 +48,8 @@ require 'inc/header.php';
         <tr>
     <?php
 
-    $db = App::getDatabase()->query("SELECT * FROM produits WHERE username=$utilisateur");
+    $db = App::getDatabase()->query("SELECT * FROM produits WHERE username=$utilisateur ORDER BY id DESC LIMIT 5");
+
 
 		while ($info = $db->fetch(PDO::FETCH_ASSOC)) {
 
