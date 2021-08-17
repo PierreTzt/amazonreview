@@ -46,16 +46,15 @@ require 'inc/header.php';
       </thead>
       <tbody>
         <tr>
-        <?php
-		$mysqli = new mysqli("localhost", "root", "", "amazonreview");
-		$mysqli -> set_charset("utf8");
-		$requete = "SELECT * FROM produits WHERE username=$utilisateur";
-		$resultat = $mysqli -> query($requete);
-		while ($ligne = $resultat -> fetch_assoc()) {
+    <?php
 
-      echo '<td>'. $ligne['id'] .'</td><td>'. $ligne['nom'] .'</td><td>'. $ligne['prix'] .'</td><td>'. $ligne['etat'] .'</td><td><a href="view.php?id='.$ligne['id'].'"><i class="fas fa-edit"></i></a></td><td><a href='. $ligne['url'] .'&tag=infoelections-21><i class="fab fa-amazon" style="color:orange"></i></a></td></tr>';
+    $db = App::getDatabase()->query("SELECT * FROM produits WHERE username=$utilisateur");
+
+		while ($info = $db->fetch(PDO::FETCH_ASSOC)) {
+
+      echo '<td>'. $info['id'] .'</td><td>'. $info['nom'] .'</td><td>'. $info['prix'] .'</td><td>'. $info['etat'] .'</td><td><a href="view.php?id='.$info['id'].'"><i class="fas fa-edit"></i></a></td><td><a href='. $info['url'] .'&tag=infoelections-21><i class="fab fa-amazon" style="color:orange"></i></a></td></tr>';
         }
-		$mysqli->close();
+		
 		?>
       </tbody>
     </table>
