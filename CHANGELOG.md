@@ -12,8 +12,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Nouveau header.php
 - Dossiers Asset avec css et js pour le nouveau header
 
+### Changed
+- Changement du logo logo-4.png dans le dossier Asset/media/logo
+- Mise a jour des balise <head> dans le header
+
 ### Deprecated
 - header.php vers headerold.php
+
+### Removed
+- Suppresion de logo-1-dark.svg dans le dossier Asset/media/logo
+- Suppresion de logo-1.svg dans le dossier Asset/media/logo
+- Suppresion de logo-2-dark.svg dans le dossier Asset/media/logo
+- Suppresion de logo-2.svg dans le dossier Asset/media/logo
+- Suppresion de logo-3.svg dans le dossier Asset/media/logo
+- Suppresion de logo-5.p,g dans le dossier Asset/media/logo
+- Suppresion de logo-6.svg dans le dossier Asset/media/logo
+- Suppresion de logo-landing-dark.svg dans le dossier Asset/media/logo
+- Suppresion de logo-landing.svg dans le dossier Asset/media/logo
+
 
 ## [1.4] - 2021-08-17
 ### Changed
