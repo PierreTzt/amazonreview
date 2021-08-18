@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.5] - 2021-08-18
 ### Added
 - Nouveau header.php
+- Nouvel accueil : dashboard.php
 - Dossiers Asset avec css et js pour le nouveau header
 
 ### Changed
@@ -17,6 +18,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Mise a jour des balise <head> dans le header
 - Affichage du menu une fois logé
 - Mise en place de commentaire sur le code
+- Sur la page de login, la redirection se fait sur le dashboard et non plus sur la page account
+- Mise a jour du header pour mieux prendre en compte le css
 
 ### Deprecated
 - header.php vers headerold.php

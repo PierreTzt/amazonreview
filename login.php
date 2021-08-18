@@ -4,7 +4,7 @@ $auth = App::getAuth();
 $db = App::getDatabase();
 $auth->connectFromCookie($db);
 if($auth->user()){
-    App::redirect('account.php');
+    App::redirect('dashboard.php');
 }
 if(!empty($_POST) && !empty($_POST['username']) && !empty($_POST['password'])) {
     $user = $auth->login($db, $_POST['username'], $_POST['password'], isset($_POST['remember']));

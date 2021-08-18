@@ -41,10 +41,28 @@
 					<div id="kt_header" class="header align-items-stretch" data-kt-sticky="true" data-kt-sticky-name="header" data-kt-sticky-offset="{default: '200px', lg: '300px'}">
 						<!--begin::Container-->
 						<div class="container d-flex align-items-center">
+							<!--begin::Heaeder menu toggle-->
+							<div class="d-flex topbar align-items-center d-lg-none ms-n2 me-3" title="Show aside menu">
+								<div class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px" id="kt_header_menu_mobile_toggle">
+									<!--begin::Svg Icon | path: icons/duotone/Text/Menu.svg-->
+									<span class="svg-icon svg-icon-2x">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+											<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+												<rect x="0" y="0" width="24" height="24" />
+												<rect fill="#000000" x="4" y="5" width="16" height="3" rx="1.5" />
+												<path d="M5.5,15 L18.5,15 C19.3284271,15 20,15.6715729 20,16.5 C20,17.3284271 19.3284271,18 18.5,18 L5.5,18 C4.67157288,18 4,17.3284271 4,16.5 C4,15.6715729 4.67157288,15 5.5,15 Z M5.5,10 L18.5,10 C19.3284271,10 20,10.6715729 20,11.5 C20,12.3284271 19.3284271,13 18.5,13 L5.5,13 C4.67157288,13 4,12.3284271 4,11.5 C4,10.6715729 4.67157288,10 5.5,10 Z" fill="#000000" opacity="0.3" />
+											</g>
+										</svg>
+									</span>
+									<!--end::Svg Icon-->
+								</div>
+							</div>
+							<!--end::Heaeder menu toggle-->
 							<!--begin::Header Logo-->
 							<div class="header-logo me-5 me-md-10 flex-grow-1 flex-lg-grow-0">
 								<a href="../../demo2/dist/index.html">
 									<img alt="Logo" src="assets/media/logos/logo-4.png" class="logo-default h-25px" />
+									<img alt="Logo" src="assets/media/logos/logo-5.png" class="logo-sticky h-25px" />
 								</a>
 							</div>
 							<!--end::Header Logo-->
@@ -54,8 +72,7 @@
 								<div class="d-flex align-items-stretch" id="kt_header_nav">
 									<!--begin::Menu wrapper-->
 									<div class="header-menu align-items-stretch" data-kt-drawer="true" data-kt-drawer-name="header-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_header_menu_mobile_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav'}">
-									<?php if (isset($_SESSION['auth'])): ?>
-									<!--begin::Menu-->
+										<!--begin::Menu-->
 										<div class="menu menu-lg-rounded menu-column menu-lg-row menu-state-bg menu-title-gray-700 menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-400 fw-bold my-5 my-lg-0 align-items-stretch" id="#kt_header_menu" data-kt-menu="true">
 											<div data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start" class="menu-item here show menu-lg-down-accordion me-lg-1">
 												<a class="menu-link active py-3" href="../../demo2/dist/index.html">
@@ -116,19 +133,6 @@
 										</div>
 										<!--end::Menu-->
 									</div>
-									<?php else: ?>
-									<!--begin::Menu-->
-									<div class="menu menu-lg-rounded menu-column menu-lg-row menu-state-bg menu-title-gray-700 menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-400 fw-bold my-5 my-lg-0 align-items-stretch" id="#kt_header_menu" data-kt-menu="true">
-											<div data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start" class="menu-item here show menu-lg-down-accordion me-lg-1">
-												<a class="menu-link active py-3" href="register.php">
-													<span class="menu-title">S'inscrire</span>
-													<span class="menu-arrow d-lg-none"></span>
-												</a>
-											</div>
-										</div>
-										<!--end::Menu-->
-									</div>
-									<?php endif; ?>
 									<!--end::Menu wrapper-->
 								</div>
 								<!--end::Navbar-->
@@ -328,56 +332,10 @@
 						<!--end::Container-->
 					</div>
 					<!--end::Header-->
-					<!--begin::Toolbar-->
-					<div class="toolbar py-5 py-lg-15" id="kt_toolbar">
-						<!--begin::Container-->
-						<div id="kt_toolbar_container" class="container d-flex flex-stack flex-wrap">
-							<!--begin::Page title-->
-							<div class="page-title d-flex flex-column me-3">
-								<!--begin::Title-->
-								<h1 class="d-flex text-white fw-bolder my-1 fs-3">Dashboard</h1>
-								<!--end::Title-->
-								<!--begin::Breadcrumb-->
-								<ul class="breadcrumb breadcrumb-separatorless fw-bold fs-7 my-1">
-									<!--begin::Item-->
-									<li class="breadcrumb-item text-white opacity-75">
-										<a href="../../demo2/dist/index.html" class="text-white text-hover-primary">Home</a>
-									</li>
-									<!--end::Item-->
-									<!--begin::Item-->
-									<li class="breadcrumb-item">
-										<span class="bullet bg-white opacity-75 w-5px h-2px"></span>
-									</li>
-									<!--end::Item-->
-									<!--begin::Item-->
-									<li class="breadcrumb-item text-white opacity-75">Dashboard</li>
-									<!--end::Item-->
-								</ul>
-								<!--end::Breadcrumb-->
-							</div>
-							<!--end::Page title-->
-							<!--begin::Actions-->
-							<div class="d-flex align-items-center py-3 py-md-1">
-								<!--begin::Button-->
-								<a href="#" class="btn btn-bg-white btn-active-color-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app" id="kt_toolbar_primary_button">Create</a>
-								<!--end::Button-->
-							</div>
-							<!--end::Actions-->
-						</div>
-						<!--end::Container-->
-					</div>
-					<!--end::Toolbar-->
-					<!--begin::Container-->
-					<div id="kt_content_container" class="d-flex flex-column-fluid align-items-start container">
-						<!--begin::Post-->
-						<div class="content flex-row-fluid" id="kt_content">
-							<!--begin::Row-->
-							<div class="row gy-5 g-xl-8">
-								<!--begin::Col-->
-								<div class="col-xxl-4">
-									<!--begin::Mixed Widget 2-->
-									<div class="card card-xxl-stretch">
-										<!--begin::Header-->
+					
+					<?php if (isset($_SESSION['auth'])): ?>
+					<?php else: ?>
+					<?php endif; ?>
 
 <!-- Information via les messages flash-->										
 <?php if(Session::getInstance()->hasFlashes()): ?>
