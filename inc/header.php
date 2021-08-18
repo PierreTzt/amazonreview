@@ -2,10 +2,12 @@
 <html lang="en">
 	<!--begin::Head-->
 	<head><base href="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>Amazon review</title>
 		<meta name="description" content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 94,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
 		<meta name="keywords" content="Metronic, bootstrap, bootstrap 5, Angular, VueJs, React, Laravel, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="">
 		<meta charset="utf-8" />
 		<meta property="og:locale" content="fr_FR" />
 		<meta property="og:type" content="siteweb" />
@@ -52,7 +54,8 @@
 								<div class="d-flex align-items-stretch" id="kt_header_nav">
 									<!--begin::Menu wrapper-->
 									<div class="header-menu align-items-stretch" data-kt-drawer="true" data-kt-drawer-name="header-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_header_menu_mobile_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav'}">
-										<!--begin::Menu-->
+									<?php if (isset($_SESSION['auth'])): ?>
+									<!--begin::Menu-->
 										<div class="menu menu-lg-rounded menu-column menu-lg-row menu-state-bg menu-title-gray-700 menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-400 fw-bold my-5 my-lg-0 align-items-stretch" id="#kt_header_menu" data-kt-menu="true">
 											<div data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start" class="menu-item here show menu-lg-down-accordion me-lg-1">
 												<a class="menu-link active py-3" href="../../demo2/dist/index.html">
@@ -113,6 +116,19 @@
 										</div>
 										<!--end::Menu-->
 									</div>
+									<?php else: ?>
+									<!--begin::Menu-->
+									<div class="menu menu-lg-rounded menu-column menu-lg-row menu-state-bg menu-title-gray-700 menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-400 fw-bold my-5 my-lg-0 align-items-stretch" id="#kt_header_menu" data-kt-menu="true">
+											<div data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start" class="menu-item here show menu-lg-down-accordion me-lg-1">
+												<a class="menu-link active py-3" href="register.php">
+													<span class="menu-title">S'inscrire</span>
+													<span class="menu-arrow d-lg-none"></span>
+												</a>
+											</div>
+										</div>
+										<!--end::Menu-->
+									</div>
+									<?php endif; ?>
 									<!--end::Menu wrapper-->
 								</div>
 								<!--end::Navbar-->
@@ -363,10 +379,11 @@
 									<div class="card card-xxl-stretch">
 										<!--begin::Header-->
 
-                                        <?php if(Session::getInstance()->hasFlashes()): ?>
-        <?php foreach(Session::getInstance()->getFlashes() as $type => $message): ?>
-            <div class="alert alert-<?= $type; ?>">
-                <?= $message; ?>
-            </div>
-        <?php endforeach; ?>
-    <?php endif; ?>
+<!-- Information via les messages flash-->										
+<?php if(Session::getInstance()->hasFlashes()): ?>
+	<?php foreach(Session::getInstance()->getFlashes() as $type => $message): ?>
+    	<div class="alert alert-<?= $type; ?>">
+        	<?= $message; ?>
+    	</div>
+    	<?php endforeach; ?>
+<?php endif; ?>

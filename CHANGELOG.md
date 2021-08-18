@@ -15,6 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Changement du logo logo-4.png dans le dossier Asset/media/logo
 - Mise a jour des balise <head> dans le header
+- Affichage du menu une fois logé
+- Mise en place de commentaire sur le code
 
 ### Deprecated
 - header.php vers headerold.php
