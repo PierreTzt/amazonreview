@@ -215,7 +215,7 @@ $utilisateur = $_SESSION['auth']->id;
 																		<!--end::Svg Icon-->
 																	</a>
 																</div>
-															</td>
+															</td> 
 														</tr>';
 													}
 		

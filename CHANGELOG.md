@@ -21,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Mise en place de commentaire sur le code
 - Sur la page de login, la redirection se fait sur le dashboard et non plus sur la page account
 - Mise a jour du header pour mieux prendre en compte le css
-- Affichage des 5 dernieres commande avec le nom du produit, le prix, le type de remboursement, le lien du produit, l'etat de la commande et les boutons pour permettre de géré la commande
+- Affichage des 5 dernieres commande avec le nom du produit, le prix, le type de remboursement, le lien du produit, l'etat de la commande et les boutons pour permettre de géré la commande 
 
 ### Deprecated
 - header.php vers headerold.php
