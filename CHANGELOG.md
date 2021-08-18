@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 - Cacher le tableau des commandes si aucune commandes n'existe sur la page account.php
 
+## [1.5] - 2021-08-18
+### Added
+- Nouveau header.php
+- Dossiers Asset avec css et js pour le nouveau header
+
+### Deprecated
+- header.php vers headerold.php
 
 ## [1.4] - 2021-08-17
 ### Changed
