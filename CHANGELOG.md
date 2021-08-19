@@ -19,7 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - headerold.php
 
 ### Removed
-- .gitignore dans le dossiers des class
+- .gitignore dans le dossier des class
+- .gitignore dans le dossier inc
+- Suppresion du dossier dossier css
 
 ## [1.5] - 2021-08-18
 ### Added
