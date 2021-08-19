@@ -11,7 +11,7 @@ class App{
     }
 
     static function getAuth(){
-        return new Auth(Session::getInstance(), ['restriction_msg' => 'La connexion a échouée, merci de réessayer']);
+        return new Auth(Session::getInstance(), ['restriction_msg' => "Vous n'avez pas le droit d'accéder à cette page"]);
     }
 
     static function redirect($page){

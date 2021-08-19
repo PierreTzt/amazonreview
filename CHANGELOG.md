@@ -11,11 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Epuration de la page dashboard
 - Epuration de la page footer
+- Epuration de la page header
 - Ajout de € dans le tableau des commandes
 - Mise en place correct du footer
 - Modification du message d'erreur en cas de problème de coockies de session
 - Plus de fichier d'exemple pour le moment
 - Suppression des espaces en trop dans db.php
+- Changement du message d'erreur dans app.php
 
 ### Deprecated
 - headerold.php
