@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Ajout de € dans le tableau des commandes
 - Mise en place correct du footer
 
+### Deprecated
+- headerold.php
+
 ## [1.5] - 2021-08-18
 ### Added
 - Nouveau header.php
