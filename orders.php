@@ -11,7 +11,7 @@ $utilisateur = $_SESSION['auth']->id;
 			<!--begin::Page title-->
 			<div class="page-title d-flex flex-column me-3">
 				<!--begin::Title-->
-				<h1 class="d-flex text-white fw-bolder my-1 fs-3">Tableau de bord</h1>
+				<h1 class="d-flex text-white fw-bolder my-1 fs-3">Toutes les commandes</h1>
 				<!--end::Title-->
 			<!--begin::Breadcrumb-->
 			<ul class="breadcrumb breadcrumb-separatorless fw-bold fs-7 my-1">
@@ -26,7 +26,7 @@ $utilisateur = $_SESSION['auth']->id;
 				</li>
 				<!--end::Item-->
 				<!--begin::Item-->
-					<li class="breadcrumb-item text-white opacity-75">Tableau de bord</li>
+					<li class="breadcrumb-item text-white opacity-75">Toutes les commandes</li>
 				<!--end::Item-->
 				</ul>
 				<!--end::Breadcrumb-->
@@ -48,126 +48,11 @@ $utilisateur = $_SESSION['auth']->id;
 				<!--begin::Post-->
 				<div class="content flex-row-fluid" id="kt_content">
 					<!--begin::Row-->
-					<div class="row gy-5 g-xl-8">
-						<!--begin::Col-->
-						<div class="col-xxl-4">
-							<!--begin::Mixed Widget 7-->
-							<div class="card card-xxl-stretch-50 mb-5 mb-xl-8">
-								<!--begin::Body-->
-								<div class="card-body d-flex flex-column p-0">
-									<!--begin::Stats-->
-									<div class="flex-grow-1 card-p pb-0">
-										<div class="d-flex flex-stack flex-wrap">
-											<div class="me-2">
-												<a href="#" class="text-dark text-hover-primary fw-bolder fs-3">Total des commandes</a>
-													<div class="text-muted fs-7 fw-bold">La dernière commande est de 20 €</div>
-												</div>
-											<div class="fw-bolder fs-3 text-primary">24,500 €</div>
-										</div>
-									</div>
-									<!--end::Stats-->
-									<!--begin::Chart-->
-										<div class="mixed-widget-7-chart card-rounded-bottom" data-kt-chart-color="primary" style="height: 150px"></div>
-									<!--end::Chart-->
-								</div>
-								<!--end::Body-->
-							</div>
-							<!--end::Mixed Widget 7-->
-							<!--begin::List Widget 3-->
-							<div class="card card-xxl-stretch-50 mb-5 mb-xl-8">
-								<!--begin::Header-->
-								<div class="card-header border-0">
-									<h3 class="card-title fw-bolder text-dark">Todo</h3>
-								</div>
-								<!--end::Header-->
-								<!--begin::Body-->
-								<div class="card-body pt-2">
-									<!--begin::Item-->
-									<div class="d-flex align-items-center mb-8">
-										<!--begin::Bullet-->
-										<span class="bullet bullet-vertical h-40px bg-success"></span>
-										<!--end::Bullet-->
-										<!--begin::Checkbox-->
-											<div class="form-check form-check-custom form-check-solid mx-5">
-												<input class="form-check-input" type="checkbox" value="" />
-											</div>
-										<!--end::Checkbox-->
-										<!--begin::Description-->
-											<div class="flex-grow-1">
-												<a href="#" class="text-gray-800 text-hover-primary fw-bolder fs-6">Create FireStone Logo</a>
-												<span class="text-muted fw-bold d-block">Due in 2 Days</span>
-											</div>
-										<!--end::Description-->
-										<span class="badge badge-light-success fs-8 fw-bolder">New</span>
-									</div>
-									<!--end:Item-->
-									<!--begin::Item-->
-									<div class="d-flex align-items-center mb-8">
-										<!--begin::Bullet-->
-										<span class="bullet bullet-vertical h-40px bg-primary"></span>
-										<!--end::Bullet-->
-										<!--begin::Checkbox-->
-										<div class="form-check form-check-custom form-check-solid mx-5">
-											<input class="form-check-input" type="checkbox" value="" />
-										</div>
-										<!--end::Checkbox-->
-										<!--begin::Description-->
-										<div class="flex-grow-1">
-											<a href="#" class="text-gray-800 text-hover-primary fw-bolder fs-6">Stakeholder Meeting</a>
-											<span class="text-muted fw-bold d-block">Due in 3 Days</span>
-										</div>
-										<!--end::Description-->
-										<span class="badge badge-light-primary fs-8 fw-bolder">New</span>
-									</div>
-									<!--end:Item-->
-									<!--begin::Item-->
-									<div class="d-flex align-items-center mb-8">
-										<!--begin::Bullet-->
-										<span class="bullet bullet-vertical h-40px bg-warning"></span>
-										<!--end::Bullet-->
-										<!--begin::Checkbox-->
-										<div class="form-check form-check-custom form-check-solid mx-5">
-											<input class="form-check-input" type="checkbox" value="" />
-										</div>
-										<!--end::Checkbox-->
-										<!--begin::Description-->
-										<div class="flex-grow-1">
-											<a href="#" class="text-gray-800 text-hover-primary fw-bolder fs-6">Scoping &amp; Estimations</a>
-											<span class="text-muted fw-bold d-block">Due in 5 Days</span>
-										</div>
-										<!--end::Description-->
-										<span class="badge badge-light-warning fs-8 fw-bolder">New</span>
-									</div>
-									<!--end:Item-->
-										</div>
-										<!--end::Body-->
-									</div>
-									<!--end:List Widget 3-->
-								</div>
-								<!--end::Col-->
-                                <!--begin::Col-->
-								<div class="col-xl-8">
+					<div class="row gy-5 g-xxl-12">
+             <!--begin::Col-->
+								<div class="col-xxl-12">
 									<!--begin::Tables Widget 9-->
-									<div class="card card-xxl-stretch mb-5 mb-xl-8">
-										<!--begin::Header-->
-										<div class="card-header border-0 pt-5">
-											<h3 class="card-title align-items-start flex-column">
-												<span class="card-label fw-bolder fs-3 mb-1">Statistiques des commandes</span>
-												<span class="text-muted mt-1 fw-bold fs-7">Voici vos 6 dernieres commandes</span>
-											</h3>
-											<div class="card-toolbar"  data-bs-placement="top" data-bs-trigger="hover">
-												<a href="orders.php" class="btn btn-sm btn-light-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_invite_friends">
-												<!--begin::Svg Icon | path: icons/duotone/Communication/Add-user.svg-->
-												<span class="svg-icon svg-icon-3">
-													<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-														<path d="M18,8 L16,8 C15.4477153,8 15,7.55228475 15,7 C15,6.44771525 15.4477153,6 16,6 L18,6 L18,4 C18,3.44771525 18.4477153,3 19,3 C19.5522847,3 20,3.44771525 20,4 L20,6 L22,6 C22.5522847,6 23,6.44771525 23,7 C23,7.55228475 22.5522847,8 22,8 L20,8 L20,10 C20,10.5522847 19.5522847,11 19,11 C18.4477153,11 18,10.5522847 18,10 L18,8 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
-														<path d="M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z" fill="#000000" fill-rule="nonzero" />
-													</svg>
-												</span>
-												<!--end::Svg Icon-->Voir toutes les commandes</a>
-											</div>
-										</div>
-										<!--end::Header-->
+									<div class="card card-xxl-stretch mb-5 mb-xxl-12">
 										<!--begin::Body-->
 										<div class="card-body py-3">
 											<!--begin::Table container-->
@@ -190,7 +75,7 @@ $utilisateur = $_SESSION['auth']->id;
 													</thead>
 													<!--end::Table head-->
 													<?php
-													$db = App::getDatabase()->query("SELECT * FROM produits WHERE username=$utilisateur ORDER BY id DESC LIMIT 6");
+													$db = App::getDatabase()->query("SELECT * FROM produits WHERE username=$utilisateur ORDER BY id DESC");
 													while ($info = $db->fetch(PDO::FETCH_ASSOC)) {
 													echo
 													//begin::Table body

@@ -18,9 +18,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Plus de fichier d'exemple pour le moment
 - Suppression des espaces en trop dans db.php
 - Changement du message d'erreur dans app.php
-
-### Deprecated
-- headerold.php
+- Ajustement du menu si non logé
+- Changement du nom du fichier commandes.php en orders.php
+- Mise en page de la page orders
 
 ### Removed
 - .gitignore dans le dossier des class
@@ -30,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Suppression du java upgrade plan
 - Suppression du java create app
 - Suppression du java chat
+- headerold.php
 
 ## [1.5] - 2021-08-18
 ### Added

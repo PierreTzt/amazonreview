@@ -57,12 +57,12 @@
 							<!--end::Heaeder menu toggle-->
 							<!--begin::Header Logo-->
 							<div class="header-logo me-5 me-md-10 flex-grow-1 flex-lg-grow-0">
-								<a href="../../demo2/dist/index.html">
+								<a href="index.php">
 									<img alt="Logo" src="assets/media/logos/logo-4.png" class="logo-default h-25px" />
-									<img alt="Logo" src="assets/media/logos/logo-5.png" class="logo-sticky h-25px" />
 								</a>
 							</div>
 							<!--end::Header Logo-->
+							<?php if (isset($_SESSION['auth'])): ?>
 							<!--begin::Wrapper-->
 							<div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
 								<!--begin::Navbar-->
@@ -72,60 +72,9 @@
 										<!--begin::Menu-->
 										<div class="menu menu-lg-rounded menu-column menu-lg-row menu-state-bg menu-title-gray-700 menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-400 fw-bold my-5 my-lg-0 align-items-stretch" id="#kt_header_menu" data-kt-menu="true">
 											<div data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start" class="menu-item here show menu-lg-down-accordion me-lg-1">
-												<a class="menu-link active py-3" href="../../demo2/dist/index.html">
-													<span class="menu-title">Dashboard</span>
-													<span class="menu-arrow d-lg-none"></span>
+												<a class="menu-link active py-3" href="dashboard.php">
+													<span class="menu-title">Tableau de bord</span>
 												</a>
-												<div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
-													<div class="menu-item">
-														<a class="menu-link active py-3" href="../../demo2/dist/index.html">
-															<span class="menu-icon">
-																<!--begin::Svg Icon | path: icons/duotone/Design/PenAndRuller.svg-->
-																<span class="svg-icon svg-icon-2">
-																	<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																		<path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" fill="#000000" opacity="0.3" />
-																		<path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" fill="#000000" />
-																	</svg>
-																</span>
-																<!--end::Svg Icon-->
-															</span>
-															<span class="menu-title">Default</span>
-														</a>
-													</div>
-													<div class="menu-item">
-														<a class="menu-link py-3" href="../../demo2/dist/dashboards/aside.html">
-															<span class="menu-icon">
-																<!--begin::Svg Icon | path: icons/duotone/Home/Cupboard.svg-->
-																<span class="svg-icon svg-icon-2">
-																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																			<rect x="0" y="0" width="24" height="24" />
-																			<path d="M3.5,3 L9.5,3 C10.3284271,3 11,3.67157288 11,4.5 L11,18.5 C11,19.3284271 10.3284271,20 9.5,20 L3.5,20 C2.67157288,20 2,19.3284271 2,18.5 L2,4.5 C2,3.67157288 2.67157288,3 3.5,3 Z M9,9 C8.44771525,9 8,9.44771525 8,10 L8,12 C8,12.5522847 8.44771525,13 9,13 C9.55228475,13 10,12.5522847 10,12 L10,10 C10,9.44771525 9.55228475,9 9,9 Z" fill="#000000" opacity="0.3" />
-																			<path d="M14.5,3 L20.5,3 C21.3284271,3 22,3.67157288 22,4.5 L22,18.5 C22,19.3284271 21.3284271,20 20.5,20 L14.5,20 C13.6715729,20 13,19.3284271 13,18.5 L13,4.5 C13,3.67157288 13.6715729,3 14.5,3 Z M20,9 C19.4477153,9 19,9.44771525 19,10 L19,12 C19,12.5522847 19.4477153,13 20,13 C20.5522847,13 21,12.5522847 21,12 L21,10 C21,9.44771525 20.5522847,9 20,9 Z" fill="#000000" transform="translate(17.500000, 11.500000) scale(-1, 1) translate(-17.500000, -11.500000)" />
-																		</g>
-																	</svg>
-																</span>
-																<!--end::Svg Icon-->
-															</span>
-															<span class="menu-title">Aside</span>
-														</a>
-													</div>
-													<div class="menu-item">
-														<a class="menu-link py-3" href="../../demo2/dist/landing.html">
-															<span class="menu-icon">
-																<!--begin::Svg Icon | path: icons/duotone/Design/Sketch.svg-->
-																<span class="svg-icon svg-icon-2">
-																	<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																		<polygon fill="#000000" opacity="0.3" points="5 3 19 3 23 8 1 8" />
-																		<polygon fill="#000000" points="23 8 12 20 1 8" />
-																	</svg>
-																</span>
-																<!--end::Svg Icon-->
-															</span>
-															<span class="menu-title">Landing</span>
-														</a>
-													</div>
-												</div>
 											</div>
 										</div>
 										<!--end::Menu-->
@@ -199,10 +148,33 @@
 						<!--end::Container-->
 					</div>
 					<!--end::Header-->
-					
-					<?php if (isset($_SESSION['auth'])): ?>
-					<?php else: ?>
-					<?php endif; ?>
+	<?php else: ?>
+					<!--begin::Wrapper-->
+					<div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
+						<!--begin::Navbar-->
+						<div class="d-flex align-items-stretch" id="kt_header_nav">
+							<!--begin::Menu wrapper-->
+							<div class="header-menu align-items-stretch" data-kt-drawer="true" data-kt-drawer-name="header-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_header_menu_mobile_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav'}">
+								<!--begin::Menu-->
+								<div class="menu menu-lg-rounded menu-column menu-lg-row menu-state-bg menu-title-gray-700 menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-400 fw-bold my-5 my-lg-0 align-items-stretch" id="#kt_header_menu" data-kt-menu="true">
+									<div data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start" class="menu-item here show menu-lg-down-accordion me-lg-1">
+										<a class="menu-link active py-3" href="register.php">
+											<span class="menu-title">S'inscrire</span>
+										</a>
+									</div>
+								</div>
+								<!--end::Menu-->
+							</div>
+							<!--end::Menu wrapper-->
+						</div>
+						<!--end::Navbar-->
+					</div>
+					<!--end::Wrapper-->
+				</div>
+				<!--end::Container-->
+			</div>
+			<!--end::Header-->
+	<?php endif; ?>
 
 <!-- Information via les messages flash-->										
 <?php if(Session::getInstance()->hasFlashes()): ?>
