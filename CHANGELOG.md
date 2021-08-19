@@ -5,8 +5,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- Cacher le tableau des commandes si aucune commandes n'existe sur la page account.php
 - Possibilité de changer son mot de passe sur la page account et ne plus voir les commandes
+
+## [1.6] - 2021-08-19
+### Changed
+- Epuration de la page dashboard
+- Ajout de € dans le tableau des commandes
+- Mise en place correct du footer
 
 ## [1.5] - 2021-08-18
 ### Added
