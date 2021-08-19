@@ -10,10 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.6] - 2021-08-19
 ### Changed
 - Epuration de la page dashboard
+- Epuration de la page footer
 - Ajout de € dans le tableau des commandes
 - Mise en place correct du footer
 - Modification du message d'erreur en cas de problème de coockies de session
 - Plus de fichier d'exemple pour le moment
+- Suppression des espaces en trop dans db.php
 
 ### Deprecated
 - headerold.php
@@ -21,7 +23,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - .gitignore dans le dossier des class
 - .gitignore dans le dossier inc
-- Suppresion du dossier dossier css
+- Suppression du dossier dossier css
+- Suppression du java fullcalendar
+- Suppression du java upgrade plan
+- Suppression du java create app
+- Suppression du java chat
 
 ## [1.5] - 2021-08-18
 ### Added
