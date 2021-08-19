@@ -19,6 +19,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Changement du nom du fichier commandes.php en orders.php
 - Mise en page de la page orders
 - Possibilité de changer son mot de passe sur la page account et ne plus voir les commandes
+- Changement du nom du fichier add.php en add_order.php
+- Modification du formulaire au niveau design
 
 ### Removed
 - .gitignore dans le dossier des class
