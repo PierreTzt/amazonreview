@@ -13,9 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Ajout de € dans le tableau des commandes
 - Mise en place correct du footer
 - Modification du message d'erreur en cas de problème de coockies de session
+- Plus de fichier d'exemple pour le moment
 
 ### Deprecated
 - headerold.php
+
+### Removed
+- .gitignore dans le dossiers des class
 
 ## [1.5] - 2021-08-18
 ### Added
