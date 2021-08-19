@@ -4,9 +4,6 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
-- Possibilité de changer son mot de passe sur la page account et ne plus voir les commandes
-
 ## [1.6] - 2021-08-19
 ### Changed
 - Epuration de la page dashboard
@@ -21,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Ajustement du menu si non logé
 - Changement du nom du fichier commandes.php en orders.php
 - Mise en page de la page orders
+- Possibilité de changer son mot de passe sur la page account et ne plus voir les commandes
 
 ### Removed
 - .gitignore dans le dossier des class
