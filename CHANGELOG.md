@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Epuration de la page dashboard
 - Ajout de € dans le tableau des commandes
 - Mise en place correct du footer
+- Modification du message d'erreur en cas de problème de coockies de session
 
 ### Deprecated
 - headerold.php

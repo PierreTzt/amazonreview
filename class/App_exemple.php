@@ -11,7 +11,7 @@ class App{
     }
 
     static function getAuth(){
-        return new Auth(Session::getInstance(), ['restriction_msg' => 'Lol tu es bloqué !']);
+        return new Auth(Session::getInstance(), ['restriction_msg' => 'La connexion a échouée, merci de réessayer']);
     }
 
     static function redirect($page){
