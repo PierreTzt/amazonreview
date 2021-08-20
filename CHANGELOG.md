@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7] - 2021-08-20
+### Changed
+- Ajout du lien pour ajouter des commandes sur le dashboard
+- Mise en forme du formulaire d'ajout de commandes.
+
 ## [1.6] - 2021-08-19
 ### Changed
 - Epuration de la page dashboard
