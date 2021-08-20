@@ -81,7 +81,7 @@ require 'inc/header.php';
 									</label>
 									<!--end::Label-->
                                		<!--begin::Input-->
-									<input type="date" id="purchase_date" class="form-control form-control-solid" name="purchase_date"/>
+									<input type="date" id="purchase_date" class="form-control form-control-solid" name="purchase_date" required="true"/>
 									<!--end::Input-->
 								</div>
 								<!--end::Date d'achat du produit-->
@@ -97,46 +97,18 @@ require 'inc/header.php';
 									<!--end::Input-->
 								</div>
 								<!--end::Date de l'avis-->
-								<!--begin::Attente du vendeur-->
+								<!--begin::Prix du produit-->
 								<div class="fv-row mb-10">
-									<span class="card-label fw-bolder fs-3 mb-1">Attente du vendeur</span>
-								</div>
-								<div class="form-check form-switch form-check-custom form-check-solid">
-    								<input class="form-check-input h-20px w-30px" type="checkbox" value="" id="flexSwitch30x50"/>
-    								<label class="form-check-label" for="flexSwitch20x30">Avis</label>
-								</div>
-								<div class="form-check form-switch form-check-custom form-check-solid">
-    								<input class="form-check-input h-30px w-50px" type="checkbox" value="" id="flexSwitch30x50"/>
-    								<label class="form-check-label" for="flexSwitch30x50">Photos</label>
-								</div>
-								<div class="form-check form-switch form-check-custom form-check-solid">
-									<input class="form-check-input h-40px w-60px" type="checkbox" value="" id="flexSwitch40x60"/>
-    								<label class="form-check-label" for="flexSwitch40x60">Vidéos</label>
-								</div>
-								<!--end::Attente du vendeur-->
-								<!--begin::Type de remboursement-->
-								<div class="fv-row mb-10">
-									<span class="card-label fw-bolder fs-3 mb-1">Type de Remboutsement</span>
-								</div>
-								<div class="form-check form-switch form-check-custom form-check-solid me-10">
-    								<input class="form-check-input h-30px w-50px" type="checkbox" value="" id="flexSwitch20x30"/>
-    								<label class="form-check-label" for="flexSwitch20x30">
-        								Rembousement complet
-    								</label>
-								</div>
-								<div class="form-check form-switch form-check-custom form-check-solid me-10">
-    								<input class="form-check-input h-30px w-50px" type="checkbox" value="" id="flexSwitch20x30"/>
-    								<label class="form-check-label" for="flexSwitch20x30">
-        								Rembousement partiel
-    								</label>
-								</div>
-								<div class="form-check form-switch form-check-custom form-check-solid me-10">
-    								<input class="form-check-input h-30px w-50px" type="checkbox" value="" id="flexSwitch20x30"/>
-    								<label class="form-check-label" for="flexSwitch20x30">
-        								Carte cadeau
-    								</label>
-								</div>
-								<!--end::Type de remboursement-->
+                               		<!--begin::Label-->
+									<label class="d-flex align-items-center fs-5 fw-bold mb-2">
+										<span class="required">Prix du produit</span>
+									</label>
+									<!--end::Label-->
+                               		<!--begin::Input-->
+									<input type="text" id="price" class="form-control form-control-lg form-control-solid" name="price" required="true"/>
+										<!--end::Input--> 
+                           	    </div>
+								<!--end::Prix du produit-->
 						</div>
 					</div>                                          
 				</div>
@@ -178,13 +150,53 @@ require 'inc/header.php';
         							Prévu d'être revendu
     							</label>
 							</div>
-							<!--begin::Champ caché pour l'id de l'utilisateur-->
+							<!--end::Prévu d'être revendu-->
+							<!--begin::Attente du vendeur-->
+							<div class="fv-row mb-10">
+									<span class="card-label fw-bolder fs-3 mb-1">Attente du vendeur</span>
+								</div>
+								<div class="form-check form-switch form-check-custom form-check-solid">
+    								<input class="form-check-input h-20px w-30px" type="checkbox" value="" id="flexSwitch30x50"/>
+    								<label class="form-check-label" for="flexSwitch20x30">Avis</label>
+								</div>
+								<div class="form-check form-switch form-check-custom form-check-solid">
+    								<input class="form-check-input h-30px w-50px" type="checkbox" value="" id="flexSwitch30x50"/>
+    								<label class="form-check-label" for="flexSwitch30x50">Photos</label>
+								</div>
+								<div class="form-check form-switch form-check-custom form-check-solid">
+									<input class="form-check-input h-40px w-60px" type="checkbox" value="" id="flexSwitch40x60"/>
+    								<label class="form-check-label" for="flexSwitch40x60">Vidéos</label>
+								</div>
+								<!--end::Attente du vendeur-->
+								<!--begin::Type de remboursement-->
+								<div class="fv-row mb-10">
+									<span class="card-label fw-bolder fs-3 mb-1">Type de Remboutsement</span>
+								</div>
+								<div class="form-check form-switch form-check-custom form-check-solid me-10">
+    								<input class="form-check-input h-30px w-50px" type="checkbox" value="" id="flexSwitch20x30"/>
+    								<label class="form-check-label" for="flexSwitch20x30">
+        								Rembousement complet
+    								</label>
+								</div>
+								<div class="form-check form-switch form-check-custom form-check-solid me-10">
+    								<input class="form-check-input h-30px w-50px" type="checkbox" value="" id="flexSwitch20x30"/>
+    								<label class="form-check-label" for="flexSwitch20x30">
+        								Rembousement partiel
+    								</label>
+								</div>
+								<div class="form-check form-switch form-check-custom form-check-solid me-10">
+    								<input class="form-check-input h-30px w-50px" type="checkbox" value="" id="flexSwitch20x30"/>
+    								<label class="form-check-label" for="flexSwitch20x30">
+        								Carte cadeau
+    								</label>
+								</div>
+								<!--end::Type de remboursement-->
+								<!--begin::Champ caché pour l'id de l'utilisateur-->
 							<?php echo '<input id="username" name="username" type="hidden" value="' .$_SESSION['auth']->id. '">';?>
 							<!--end::Champ caché pour l'id de l'utilisateur-->
 							<div class="center-btn" style="position:relevant; height:5vh;">
           						<input class="btn btn-primary" type="submit" value="Envoyer">
 							</div>
-							<!--end::Prévu d'être revendu-->
 							<!--end::Table container-->
 						</div>
 						<!--begin::Body-->

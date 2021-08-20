@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Changement de "nom" dans la bdd en "name" dans la table products
 - Changement de "date_achat" dans la bdd en "purchase_date" dans la table products
 - Changement de "date_review" dans la bdd en "review_date" dans la table products
+- Changement de "prix" dans la bdd en "price" dans la table products
 - Changement dans dashboard et orders la commandes sql pour l'affichage correct
 - Mise a jour des commentaires sur le fichier add_order.php
 - Mise en place de la commande d'enregistrement des commandes dans add_confirm.php

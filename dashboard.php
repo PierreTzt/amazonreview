@@ -213,7 +213,7 @@ $utilisateur = $_SESSION['auth']->id;
 																</div>
 															</td>
 															<td>
-																<a href="#" class="text-dark fw-bolder text-hover-primary d-block fs-6">'. $info['prix'] .' €</a>
+																<a href="#" class="text-dark fw-bolder text-hover-primary d-block fs-6">'. $info['price'] .' €</a>
 																<span class="text-muted fw-bold text-muted d-block fs-7">'. $info['name'] .'</span>
 															</td>
 															<td class="text-end">
