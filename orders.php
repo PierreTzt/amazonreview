@@ -75,7 +75,7 @@ $utilisateur = $_SESSION['auth']->id;
 													</thead>
 													<!--end::Table head-->
 													<?php
-													$db = App::getDatabase()->query("SELECT * FROM produits WHERE username=$utilisateur ORDER BY id DESC");
+													$db = App::getDatabase()->query("SELECT * FROM products WHERE username=$utilisateur ORDER BY id DESC");
 													while ($info = $db->fetch(PDO::FETCH_ASSOC)) {
 													echo
 													//begin::Table body
@@ -92,19 +92,19 @@ $utilisateur = $_SESSION['auth']->id;
 																		<img src="assets/media/avatars/150-11.jpg" alt="" />
 																	</div>
 																	<div class="d-flex justify-content-start flex-column">
-																		<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">'. $info['nom'] .'</a>
+																		<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">'. $info['name'] .'</a>
 																		<span class="text-muted fw-bold text-muted d-block fs-7">'. $info['url'] .'</span>
 																	</div>
 																</div>
 															</td>
 															<td>
 																<a href="#" class="text-dark fw-bolder text-hover-primary d-block fs-6">'. $info['prix'] .' €</a>
-																<span class="text-muted fw-bold text-muted d-block fs-7">'. $info['nom'] .'</span>
+																<span class="text-muted fw-bold text-muted d-block fs-7">'. $info['name'] .'</span>
 															</td>
 															<td class="text-end">
 																<div class="d-flex flex-column w-100 me-2">
 																	<div class="d-flex flex-stack mb-2">
-																		<span class="text-muted me-2 fs-7 fw-bold">'. $info['nom'] .'</span>
+																		<span class="text-muted me-2 fs-7 fw-bold">'. $info['name'] .'</span>
 																	</div>
 																	<div class="progress h-6px w-100">
 																		<div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>

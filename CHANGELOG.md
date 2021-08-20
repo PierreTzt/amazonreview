@@ -7,7 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.7] - 2021-08-20
 ### Changed
 - Ajout du lien pour ajouter des commandes sur le dashboard
-- Mise en forme du formulaire d'ajout de commandes.
+- Mise en forme du formulaire d'ajout de commandes
+- Correction des problemes du formulaire
+- Changement de la table "produits" en "products"
+- Changement de "nom" dans la bdd en "name" dans la table products
+- Changement de "date_achat" dans la bdd en "purchase_date" dans la table products
+- Changement de "date_review" dans la bdd en "review_date" dans la table products
+- Changement dans dashboard et orders la commandes sql pour l'affichage correct
 
 ## [1.6] - 2021-08-19
 ### Changed
