@@ -208,7 +208,7 @@ $utilisateur = $_SESSION['auth']->id;
 																	</div>
 																	<div class="d-flex justify-content-start flex-column">
 																		<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">'. $info['name'] .'</a>
-																		<span class="text-muted fw-bold text-muted d-block fs-7">'. $info['url'] .'</span>
+																		<a href="'. $info['url'] .'&tag=infoelections-21" class="text-muted fw-bold text-muted d-block fs-7">Lien Amazon : <i class="fab fa-amazon"></i></a>
 																	</div>
 																</div>
 															</td>
