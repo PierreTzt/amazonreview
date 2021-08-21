@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.8] - 2021-08-21
 ### Changed
 - Modification du lien du produit dans l'affichage du dashboard
+- Modification du lien du produit dans l'affichage des commandes
+- Changement du formulaire d'ajout de produit
+- Changement de "remboursement_compet" dans la bdd en "refund_type" dans la table products
+- Passage du refund_type en varchar au lieu de int
+- Changement dans dashboard et orders la commandes sql pour l'affichage correct
 
 ## [1.7] - 2021-08-20
 ### Changed

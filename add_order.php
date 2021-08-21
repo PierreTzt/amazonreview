@@ -155,39 +155,37 @@ require 'inc/header.php';
 							<div class="fv-row mb-10">
 									<span class="card-label fw-bolder fs-3 mb-1">Attente du vendeur</span>
 								</div>
-								<div class="form-check form-switch form-check-custom form-check-solid">
-    								<input class="form-check-input h-20px w-30px" type="checkbox" value="" id="flexSwitch30x50"/>
-    								<label class="form-check-label" for="flexSwitch20x30">Avis</label>
-								</div>
-								<div class="form-check form-switch form-check-custom form-check-solid">
-    								<input class="form-check-input h-30px w-50px" type="checkbox" value="" id="flexSwitch30x50"/>
-    								<label class="form-check-label" for="flexSwitch30x50">Photos</label>
-								</div>
-								<div class="form-check form-switch form-check-custom form-check-solid">
-									<input class="form-check-input h-40px w-60px" type="checkbox" value="" id="flexSwitch40x60"/>
-    								<label class="form-check-label" for="flexSwitch40x60">Vidéos</label>
+								<div class="form-check form-switch form-check-custom form-check-solid me-10">
+    								<input class="form-check-input h-20px w-30px" type="checkbox" value="" id="flexSwitch20x30"/>
+									<label for="avis" class="d-flex align-items-center fs-5 fw-bold mb-2">
+										<span>Avis</span>
+									</label>
+    								<input class="form-check-input h-20px w-30px" type="checkbox" value="" id="flexSwitch20x30"/>
+									<label for="avis" class="d-flex align-items-center fs-5 fw-bold mb-2">
+										<span>Photos</span>
+									</label>
+									<input class="form-check-input h-20px w-30px" type="checkbox" value="" id="flexSwitch20x30"/>
+									<label for="avis" class="d-flex align-items-center fs-5 fw-bold mb-2">
+										<span>vidéo</span>
+									</label>
 								</div>
 								<!--end::Attente du vendeur-->
 								<!--begin::Type de remboursement-->
 								<div class="fv-row mb-10">
-									<span class="card-label fw-bolder fs-3 mb-1">Type de Remboutsement</span>
+									<span class="card-label fw-bolder fs-3 mb-1">Type de Remboursement</span>
 								</div>
 								<div class="form-check form-switch form-check-custom form-check-solid me-10">
-    								<input class="form-check-input h-30px w-50px" type="checkbox" value="" id="flexSwitch20x30"/>
-    								<label class="form-check-label" for="flexSwitch20x30">
-        								Rembousement complet
+									<input class="form-check-input h-20px w-30px" type="checkbox" value="" id="full_refund"/>
+									<label for="full_refund" class="d-flex align-items-center fs-5 fw-bold mb-2">
+										<span>Remboursement complet</span>
+									</label>
+    								<input class="form-check-input h-20px w-30px" type="checkbox" value="" id="partial_refund"/>
+    								<label for="partial_refund" class="d-flex align-items-center fs-5 fw-bold mb-2">
+										<span>Remboursement partiel</span>
     								</label>
-								</div>
-								<div class="form-check form-switch form-check-custom form-check-solid me-10">
-    								<input class="form-check-input h-30px w-50px" type="checkbox" value="" id="flexSwitch20x30"/>
-    								<label class="form-check-label" for="flexSwitch20x30">
-        								Rembousement partiel
-    								</label>
-								</div>
-								<div class="form-check form-switch form-check-custom form-check-solid me-10">
-    								<input class="form-check-input h-30px w-50px" type="checkbox" value="" id="flexSwitch20x30"/>
-    								<label class="form-check-label" for="flexSwitch20x30">
-        								Carte cadeau
+    								<input class="form-check-input h-20px w-30px" type="checkbox" value="" id="flexSwitch20x30"/>
+									<label for="full_refund" class="d-flex align-items-center fs-5 fw-bold mb-2">
+										<span>Carte cadeau</span>
     								</label>
 								</div>
 								<!--end::Type de remboursement-->

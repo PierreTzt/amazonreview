@@ -13,12 +13,12 @@ $price = $_POST["price"];
 $url = $_POST["url"];
 $demande = $_POST["demande"];
 $revente = $_POST["revente"];
-$remboursement_complet = $_POST["remboursement_complet"];
+$refund_type = $_POST["refund_type"];
 $frais_paypal = $_POST["frais_paypal"];
 $etat = $_POST["etat"];
 $username = $_POST["username"];
 
 
-$db = App::getDatabase()->query("INSERT INTO products(name,purchase_date,review_date,price,url,username) VALUES('$name','$purchase_date','$review_date','$price','$url','$username')");
+$db = App::getDatabase()->query("INSERT INTO products(name,purchase_date,review_date,price,url,username,refund_type) VALUES('$name','$purchase_date','$review_date','$price','$url','$username','$refund_type')");
 
 ?>
