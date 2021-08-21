@@ -145,7 +145,7 @@ require 'inc/header.php';
 							<!--end::Lien du produit-->
 							<!--begin::Prévu d'être revendu-->
 							<div class="form-check form-switch form-check-custom form-check-solid me-10">
-								<input class="form-check-input h-20px w-30px" type="checkbox" id="resale" name="resale" value="Oui"/>
+								<input class="form-check-input h-20px w-30px" type="checkbox" value="1" id="resale" name="resale[]"/>
     							<label class="form-check-label" for="resale">
         							Prévu d'être revendu
     							</label>
@@ -175,16 +175,16 @@ require 'inc/header.php';
 									<span class="card-label fw-bolder fs-3 mb-1">Type de Remboursement</span>
 								</div>
 								<div class="form-check form-switch form-check-custom form-check-solid me-10">
-									<input class="form-check-input h-20px w-30px" type="checkbox" value="" id="full_refund"/>
+									<input class="form-check-input h-20px w-30px" type="checkbox" value="1" id="full_refund" name="refund_type[]"/>
 									<label for="full_refund" class="d-flex align-items-center fs-5 fw-bold mb-2">
 										<span>Remboursement complet</span>
 									</label>
-    								<input class="form-check-input h-20px w-30px" type="checkbox" value="" id="partial_refund"/>
+    								<input class="form-check-input h-20px w-30px" type="checkbox" value="2" id="partial_refund" name="refund_type[]"/>
     								<label for="partial_refund" class="d-flex align-items-center fs-5 fw-bold mb-2">
 										<span>Remboursement partiel</span>
     								</label>
-    								<input class="form-check-input h-20px w-30px" type="checkbox" value="" id="flexSwitch20x30"/>
-									<label for="full_refund" class="d-flex align-items-center fs-5 fw-bold mb-2">
+    								<input class="form-check-input h-20px w-30px" type="checkbox" value="3" id="gift_card" name="refund_type[]"/>
+									<label for="gift_card" class="d-flex align-items-center fs-5 fw-bold mb-2">
 										<span>Carte cadeau</span>
     								</label>
 								</div>
