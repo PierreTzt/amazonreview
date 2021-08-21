@@ -145,8 +145,8 @@ require 'inc/header.php';
 							<!--end::Lien du produit-->
 							<!--begin::Prévu d'être revendu-->
 							<div class="form-check form-switch form-check-custom form-check-solid me-10">
-    							<input class="form-check-input h-30px w-50px" type="checkbox" value="" id="flexSwitch20x30"/>
-    							<label class="form-check-label" for="flexSwitch20x30">
+								<input class="form-check-input h-20px w-30px" type="checkbox" id="resale" name="resale" value="Oui"/>
+    							<label class="form-check-label" for="resale">
         							Prévu d'être revendu
     							</label>
 							</div>
@@ -156,17 +156,17 @@ require 'inc/header.php';
 									<span class="card-label fw-bolder fs-3 mb-1">Attente du vendeur</span>
 								</div>
 								<div class="form-check form-switch form-check-custom form-check-solid me-10">
-    								<input class="form-check-input h-20px w-30px" type="checkbox" value="" id="flexSwitch20x30"/>
+    								<input class="form-check-input h-20px w-30px" type="checkbox" value="1" id="avis" name="expectancy[]" checked/>
 									<label for="avis" class="d-flex align-items-center fs-5 fw-bold mb-2">
 										<span>Avis</span>
 									</label>
-    								<input class="form-check-input h-20px w-30px" type="checkbox" value="" id="flexSwitch20x30"/>
-									<label for="avis" class="d-flex align-items-center fs-5 fw-bold mb-2">
+    								<input class="form-check-input h-20px w-30px" type="checkbox" value="2" id="photos" name="expectancy[]"/>
+									<label for="photos" class="d-flex align-items-center fs-5 fw-bold mb-2">
 										<span>Photos</span>
 									</label>
-									<input class="form-check-input h-20px w-30px" type="checkbox" value="" id="flexSwitch20x30"/>
-									<label for="avis" class="d-flex align-items-center fs-5 fw-bold mb-2">
-										<span>vidéo</span>
+									<input class="form-check-input h-20px w-30px" type="checkbox" value="3" id="video" name="expectancy[]"/>
+									<label for="video" class="d-flex align-items-center fs-5 fw-bold mb-2">
+										<span>Vidéo</span>
 									</label>
 								</div>
 								<!--end::Attente du vendeur-->

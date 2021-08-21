@@ -10,8 +10,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Modification du lien du produit dans l'affichage des commandes
 - Changement du formulaire d'ajout de produit
 - Changement de "remboursement_compet" dans la bdd en "refund_type" dans la table products
+- Changement de "etat" dans la bdd en "condition" dans la table products
+- Changement de "revente" dans la bdd en "resale" dans la table products
+- Changement de "demande" dans la bdd en "expectancy" dans la table products
+- Passage du resale en varchar au lieu de int
 - Passage du refund_type en varchar au lieu de int
 - Changement dans dashboard et orders la commandes sql pour l'affichage correct
+- Changement du nom du fichier edit en edit_order
+
+### Removed
+- Suppression d'envoi d'un etat de commande au moment de la création de la commande
 
 ## [1.7] - 2021-08-20
 ### Changed
