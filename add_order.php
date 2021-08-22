@@ -145,7 +145,7 @@ require 'inc/header.php';
 							<!--end::Lien du produit-->
 							<!--begin::Prévu d'être revendu-->
 							<div class="form-check form-switch form-check-custom form-check-solid me-10">
-								<input class="form-check-input h-20px w-30px" type="checkbox" value="1" id="resale" name="resale[]"/>
+								<input class="form-check-input h-20px w-30px" type="checkbox" value="1" id="resale" name="resale"/>
     							<label class="form-check-label" for="resale">
         							Prévu d'être revendu
     							</label>
@@ -175,7 +175,7 @@ require 'inc/header.php';
 									<span class="card-label fw-bolder fs-3 mb-1">Type de Remboursement</span>
 								</div>
 								<div class="form-check form-switch form-check-custom form-check-solid me-10">
-									<input class="form-check-input h-20px w-30px" type="checkbox" value="1" id="full_refund" name="refund_type[]"/>
+									<input class="form-check-input h-20px w-30px" type="checkbox" value="1" id="full_refund" name="refund_type[]" checked/>
 									<label for="full_refund" class="d-flex align-items-center fs-5 fw-bold mb-2">
 										<span>Remboursement complet</span>
 									</label>
