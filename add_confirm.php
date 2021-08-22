@@ -9,6 +9,7 @@ $purchase_date = $_POST["purchase_date"];
 $review_date = $_POST["review_date"];
 $price = $_POST["price"];
 $url = $_POST["url"];
+
 $username = $_POST["username"];
 $expectancy = implode(",",$_POST['expectancy']);
 $refund_type = implode(",",$_POST['refund_type']);

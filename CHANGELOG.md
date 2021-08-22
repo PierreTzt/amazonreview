@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.9] - 2021-08-22
 ### Changed
 - Finalisation de l'enregistrement des commandes dans le formulaire
+- Passage de expectancy, resale, refund_type dans la base de donnée en NULL
+- Passage des checkbox pour le type de remboursement en radio
+- Ajout automatique de l'avis dans l'attente du vendeur
 
 ## [1.8] - 2021-08-21
 ### Changed

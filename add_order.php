@@ -153,18 +153,15 @@ require 'inc/header.php';
 							<!--end::Prévu d'être revendu-->
 							<!--begin::Attente du vendeur-->
 							<div class="fv-row mb-10">
-									<span class="card-label fw-bolder fs-3 mb-1">Attente du vendeur</span>
+									<span class="card-label fw-bolder fs-3 mb-1">Attente du vendeur en plus de l'avis</span>
 								</div>
 								<div class="form-check form-switch form-check-custom form-check-solid me-10">
-    								<input class="form-check-input h-20px w-30px" type="checkbox" value="1" id="avis" name="expectancy[]" checked/>
-									<label for="avis" class="d-flex align-items-center fs-5 fw-bold mb-2">
-										<span>Avis</span>
-									</label>
-    								<input class="form-check-input h-20px w-30px" type="checkbox" value="2" id="photos" name="expectancy[]"/>
+									<input type="hidden" value="1" id="1" name="expectancy[]" >
+    								<input class="form-check-input h-20px w-30px" type="radio" value="2" id="photos" name="expectancy[]"/>
 									<label for="photos" class="d-flex align-items-center fs-5 fw-bold mb-2">
 										<span>Photos</span>
 									</label>
-									<input class="form-check-input h-20px w-30px" type="checkbox" value="3" id="video" name="expectancy[]"/>
+									<input class="form-check-input h-20px w-30px" type="radio" value="3" id="video" name="expectancy[]"/>
 									<label for="video" class="d-flex align-items-center fs-5 fw-bold mb-2">
 										<span>Vidéo</span>
 									</label>
@@ -175,15 +172,15 @@ require 'inc/header.php';
 									<span class="card-label fw-bolder fs-3 mb-1">Type de Remboursement</span>
 								</div>
 								<div class="form-check form-switch form-check-custom form-check-solid me-10">
-									<input class="form-check-input h-20px w-30px" type="checkbox" value="1" id="full_refund" name="refund_type[]" checked/>
+									<input class="form-check-input h-20px w-30px" type="radio" value="1" id="full_refund" name="refund_type[]" checked/>
 									<label for="full_refund" class="d-flex align-items-center fs-5 fw-bold mb-2">
 										<span>Remboursement complet</span>
 									</label>
-    								<input class="form-check-input h-20px w-30px" type="checkbox" value="2" id="partial_refund" name="refund_type[]"/>
+    								<input class="form-check-input h-20px w-30px" type="radio" value="2" id="partial_refund" name="refund_type[]"/>
     								<label for="partial_refund" class="d-flex align-items-center fs-5 fw-bold mb-2">
 										<span>Remboursement partiel</span>
     								</label>
-    								<input class="form-check-input h-20px w-30px" type="checkbox" value="3" id="gift_card" name="refund_type[]"/>
+    								<input class="form-check-input h-20px w-30px" type="radio" value="3" id="gift_card" name="refund_type[]"/>
 									<label for="gift_card" class="d-flex align-items-center fs-5 fw-bold mb-2">
 										<span>Carte cadeau</span>
     								</label>
