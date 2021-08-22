@@ -177,11 +177,6 @@ $utilisateur = $_SESSION['auth']->id;
 													<!--begin::Table head-->
 													<thead>
 														<tr class="fw-bolder text-muted">
-															<th class="w-25px">
-																<div class="form-check form-check-sm form-check-custom form-check-solid">
-																	<input class="form-check-input" type="checkbox" value="1" data-kt-check="true" data-kt-check-target=".widget-9-check" />
-																</div>
-															</th>
 															<th class="min-w-150px">Nom du produit</th>
 															<th class="min-w-140px">Prix<br>Type de remboursement</th>
 															<th class="min-w-120px">Etats<br>Date de review prevu</th>
@@ -197,11 +192,6 @@ $utilisateur = $_SESSION['auth']->id;
 													//begin::Table body
 													'<tbody>
 														<tr>
-															<td>
-																<div class="form-check form-check-sm form-check-custom form-check-solid">
-																	<input class="form-check-input widget-9-check" type="checkbox" value="1" />
-																</div>
-															</td>
 															<td>
 																<div class="d-flex align-items-center">
 																	<div class="symbol symbol-45px me-5">
