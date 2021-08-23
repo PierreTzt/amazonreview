@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Changement du formulaire de modification de produit
 - Ajout du lien de modification dans le dashboard
+- Ajout de plus de detail sur la page des commandes
 
 ## [1.9] - 2021-08-22
 ### Changed
