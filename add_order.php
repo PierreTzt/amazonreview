@@ -198,7 +198,7 @@ require 'inc/header.php';
 								<!--end::Input--> 
                        	    </div>
 							<!--end::Nom du vendeur-->
-							<!--begin::Nom du vendeur-->
+							<!--begin::Lien du profil du vendeur-->
 							<div class="fv-row mb-10">
                           		<!--begin::Label-->
 								<label for="seller_url" class="d-flex align-items-center fs-5 fw-bold mb-2">
@@ -209,7 +209,7 @@ require 'inc/header.php';
 									<input type="text" id="seller_url" class="form-control form-control-lg form-control-solid" name="seller_url" required="false" placeholder="" value="" />
 								<!--end::Input--> 
                        	    </div>
-							<!--end::Nom du vendeur-->
+							<!--end::Lien du profil du vendeur-->
 								<!--begin::Champ caché pour l'id de l'utilisateur-->
 							<?php echo '<input id="username" name="username" type="hidden" value="' .$_SESSION['auth']->id. '">';?>
 							<!--end::Champ caché pour l'id de l'utilisateur-->
