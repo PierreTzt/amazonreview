@@ -188,9 +188,9 @@ $utilisateur = $_SESSION['auth']->id;
 													$db = App::getDatabase()->query("SELECT * FROM products WHERE username=$utilisateur ORDER BY id DESC LIMIT 6");
 													while ($info = $db->fetch(PDO::FETCH_ASSOC)) {
 													$review_date = date_create($info['review_date']);
-													echo
+													
 													//begin::Table body
-													'<tbody>
+													echo '<tbody>
 														<tr>
 															<td>
 																<div class="d-flex align-items-center">

@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Changement dans le dashboard a la place du type de remboursement le nom du vendeur avec le lien direct
 - Changement dans la liste des commandes a la place du type de remboursement le nom du vendeur avec le lien direct
 - Modification du lien pour l'ajout de commande sur la page commandes
+- Changement du formulaire de modification de commande
 
 ### Removed
 - Suppression du dossier avatar dans assets/media
@@ -24,7 +25,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Suppression du dossier products dans assets/media
 - Suppression du dossier stock dans assets/media
 - Suppression du dossier technology-logos dans assets/media
-
 
 ## [2.0] - 2021-08-23
 ### Changed
