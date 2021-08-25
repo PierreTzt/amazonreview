@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Ajout dans le formulaire d'ajout de commande la possibilité de mettre le nom du vendeur ainsi qu'un lien vers son profil
 - Changement dans le dashboard a la place du type de remboursement le nom du vendeur avec le lien direct
 - Changement dans la liste des commandes a la place du type de remboursement le nom du vendeur avec le lien direct
+- Modification du lien pour l'ajout de commande sur la page commandes
+
+### Removed
+- Suppression du dossier avatar dans assets/media
 
 ## [2.0] - 2021-08-23
 ### Changed
