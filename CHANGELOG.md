@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1] - 2021-08-25
+### Added
+- Ajout dans la base de donnée le champ seller_name et seller_url
+
+### Changed
+- Ajout dans le formulaire d'ajout de commande la possibilité de mettre le nom du vendeur ainsi qu'un lien vers son profil
+- Changement dans le dashboard a la place du type de remboursement le nom du vendeur avec le lien direct
+- Changement dans la liste des commandes a la place du type de remboursement le nom du vendeur avec le lien direct
+
+
 ## [2.0] - 2021-08-23
 ### Changed
 - Changement du formulaire de modification de produit

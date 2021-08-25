@@ -63,7 +63,7 @@ $utilisateur = $_SESSION['auth']->id;
 													<thead>
 														<tr class="fw-bolder text-muted">
 															<th class="min-w-150px">Nom du produit</th>
-															<th class="min-w-140px">Prix<br>Type de remboursement</th>
+															<th class="min-w-140px">Prix<br>Nom du vendeur</th>
 															<th class="min-w-120px">Etats<br>Date de review prevu</th>
 															<th class="min-w-100px text-end">Actions</th>
 														</tr>
@@ -90,7 +90,7 @@ $utilisateur = $_SESSION['auth']->id;
 															</td>
 															<td>
 																<a href="#" class="text-dark fw-bolder text-hover-primary d-block fs-6">'. $info['price'] .' €</a>
-																<span class="text-muted fw-bold text-muted d-block fs-7">'. $info['refund_type'] .'</span>
+																<a href="'. $info['seller_url'] .'" class="text-muted fw-bold text-muted d-block fs-7">'. $info['seller_name'] .'</a>
 															</td>
 															<td class="text-end">
 																<div class="d-flex flex-column w-100 me-2">

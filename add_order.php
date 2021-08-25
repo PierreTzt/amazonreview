@@ -133,7 +133,7 @@ require 'inc/header.php';
 							<!--begin::Lien du produit-->
 							<div class="fv-row mb-10">
                           		<!--begin::Label-->
-								<label for="date_commande" class="d-flex align-items-center fs-5 fw-bold mb-2">
+								<label for="url" class="d-flex align-items-center fs-5 fw-bold mb-2">
 									<span>Lien du produit</span>
 									<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Adresse web venant sur site Amazon"></i>
 								</label>
@@ -186,6 +186,30 @@ require 'inc/header.php';
     								</label>
 								</div>
 								<!--end::Type de remboursement-->
+								<!--begin::Nom du vendeur-->
+							<div class="fv-row mb-10">
+                          		<!--begin::Label-->
+								<label for="seller_name" class="d-flex align-items-center fs-5 fw-bold mb-2">
+									<span>Nom du vendeur</span>
+								</label>
+								<!--end::Label-->
+                                <!--begin::Input-->
+									<input type="text" id="seller_name" class="form-control form-control-lg form-control-solid" name="seller_name" required="false" placeholder="" value="" />
+								<!--end::Input--> 
+                       	    </div>
+							<!--end::Nom du vendeur-->
+							<!--begin::Nom du vendeur-->
+							<div class="fv-row mb-10">
+                          		<!--begin::Label-->
+								<label for="seller_url" class="d-flex align-items-center fs-5 fw-bold mb-2">
+									<span>Lien du profil du vendeur</span>
+								</label>
+								<!--end::Label-->
+                                <!--begin::Input-->
+									<input type="text" id="seller_url" class="form-control form-control-lg form-control-solid" name="seller_url" required="false" placeholder="" value="" />
+								<!--end::Input--> 
+                       	    </div>
+							<!--end::Nom du vendeur-->
 								<!--begin::Champ caché pour l'id de l'utilisateur-->
 							<?php echo '<input id="username" name="username" type="hidden" value="' .$_SESSION['auth']->id. '">';?>
 							<!--end::Champ caché pour l'id de l'utilisateur-->
