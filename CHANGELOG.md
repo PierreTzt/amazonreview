@@ -16,6 +16,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - Suppression du dossier avatar dans assets/media
+- Suppression du dossier book dans assets/media
+- Suppression du dossier demo dans assets/media
+- Suppression du dossier illustrations dans assets/media
+- Suppression du fichier portfolio.png, preview-1.jpg, preview-2.jpg, preview-3.jpg,qr.png, qr_-_code.png dans assets/media/misc
+- Suppression du dossier product-demos dans assets/media
+- Suppression du dossier products dans assets/media
+- Suppression du dossier stock dans assets/media
+- Suppression du dossier technology-logos dans assets/media
+
 
 ## [2.0] - 2021-08-23
 ### Changed
