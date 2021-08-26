@@ -64,7 +64,7 @@ echo '
 					<div class="card-body py-3">
 						<!--begin::Table container-->
 						<div class="table-responsive">
-							<form action="add_confirm.php" method="post" class="form" novalidate="novalidate" id="kt_modal_create_app_form">
+							<form action="edit_confirm.php?id='. $id .'" method="post" class="form" novalidate="novalidate" id="kt_modal_create_app_form">
 								<!--begin::Input group-->
 								<!--begin::Nom du produit-->
                                	<div class="fv-row mb-10">

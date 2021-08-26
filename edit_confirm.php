@@ -1,58 +1,25 @@
 <?php
 require 'inc/bootstrap.php';
 App::getAuth()->restrict();
-
-
-$utilisateur = $_SESSION['auth']->id;
-
 require 'inc/header.php';
+$utilisateur = $_SESSION['auth']->id;
+$id=$_GET['id'];
+
+$name = $_POST["name"];
+$purchase_date = $_POST["purchase_date"];
+$review_date = $_POST["review_date"];
+$price = $_POST["price"];
+$url = $_POST["url"];
+$seller_name = $_POST["seller_name"];
+$seller_url = $_POST["seller_url"];
+$expectancy = implode(",",$_POST['expectancy']);
+$refund_type = implode(",",$_POST['refund_type']);
+//if(isset($_POST["resale"]))
+//{
+    //$resale = $_POST["resale"];
+    $db = App::getDatabase()->query("UPDATE products SET name = '$name', purchase_date = '$purchase_date', review_date = '$review_date', price = '$price', url = '$url', expectancy ='$expectancy', refund_type = '$refund_type', seller_name = '$seller_name', seller_url = '$seller_url' WHERE id = $id");
+//}
+//else{
+//    $db = App::getDatabase()->query("UPDATE products(name,purchase_date,review_date,price,url,username,refund_type,expectancy,seller_name,seller_url) VALUES('$name','$purchase_date','$review_date','$price','$url','$refund_type','$expectancy','$seller_name','$seller_url') WHERE id = $id");
+//}
 ?>
-
-
-<?php
-
-    
-    $date_achat = $_POST['date_achat'];
-    $date_review = $_POST['date_review'];
-    $nom = $_POST['nom'];
-    $prix = $_POST['prix'];
-    $url = $_POST['url'];
-
-    try{
-        //On se connecte à la BDD
-        $dbco = new PDO('mysql:host=localhost;dbname=amazonreview','root', '');
-    }catch(Exception $e){
-        echo "Échec : " . $e->getMessage();
-     }
-
-
-        //On insère les données reçues
-        $sth = $dbco->prepare("
-            UPDATE produits SET date_achat = :date_achat, date_review = :date_review, nom = :nom, prix = :prix, url = :url WHERE id = :id");
-        $sth->bindParam('date_achat',$date_achat);
-        $sth->bindParam('date_review',$date_review);
-        $sth->bindParam('nom',$nom);
-        $sth->bindParam('prix',$prix);
-        $sth->bindParam('url',$url);
-        $sth->execute(array());
-
-        $sth = $dbco->prepare('SELECT * FROM produit WHERE id = ?');
-
-        if(!empty($_POST)){
-        $req = $cnx->prepare('UPDATE me_utilisateur SET email = :email, site = :site WHERE identifiant = :identifiant');
-    $req->execute(array(
-    'email' => $_POST'email'],
-    'site' => $_POST'site'],
-    ':identifiant' => $_SESSION'identifiant']
-    ));
-}
-
-     
-        
-        //On renvoie l'utilisateur vers la page de remerciement
-        //header("Location:form-merci.html");
-    
-    
-?>
-
-<?php require 'inc/footer.php'; ?>
