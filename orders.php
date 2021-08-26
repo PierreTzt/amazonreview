@@ -70,7 +70,7 @@ $utilisateur = $_SESSION['auth']->id;
 													</thead>
 													<!--end::Table head-->
 													<?php
-													$db = App::getDatabase()->query("SELECT * FROM products WHERE username=$utilisateur ORDER BY id DESC");
+													$db = App::getDatabase()->query("SELECT * FROM products WHERE username=$utilisateur ORDER BY review_date DESC");
 													while ($info = $db->fetch(PDO::FETCH_ASSOC)) {
 													$review_date = date_create($info['review_date']);
 													echo
@@ -105,7 +105,7 @@ $utilisateur = $_SESSION['auth']->id;
 															</td>
 															<td>
 																<div class="d-flex justify-content-end flex-shrink-0">
-																	<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+																	<a href="edit_order.php?id='. $info['id'] .'" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
 																		<!--begin::Svg Icon | path: icons/duotone/Communication/Write.svg-->
 																		<span class="svg-icon svg-icon-3">
 																			<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">

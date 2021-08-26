@@ -200,7 +200,7 @@ echo '
 								</label>
 								<!--end::Label-->
                                 <!--begin::Input-->
-									<input type="text" id="seller_name" class="form-control form-control-lg form-control-solid" name="seller_name" required="false" placeholder="" value="" />
+									<input type="text" id="seller_name" value="' . $infos['seller_name'] . '" class="form-control form-control-lg form-control-solid" name="seller_name" required="false" placeholder="" />
 								<!--end::Input--> 
                        	    </div>
 							<!--end::Nom du vendeur-->
@@ -212,7 +212,7 @@ echo '
 								</label>
 								<!--end::Label-->
                                 <!--begin::Input-->
-									<input type="text" id="seller_url" class="form-control form-control-lg form-control-solid" name="seller_url" required="false" placeholder="" value="" />
+									<input type="text" value="' . $infos['seller_url'] . '" id="seller_url" class="form-control form-control-lg form-control-solid" name="seller_url" required="false" placeholder="" />
 								<!--end::Input--> 
                        	    </div>
 							<!--end::Lien du profil du vendeur-->

@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.2] - 2021-08-26
 ### Changed
 - Changement du formulaire de modification de commande
+- Mise en place du lien de modification dans la page des commandes
+- Tri des commandes par date decroissante
 
 ## [2.1] - 2021-08-25
 ### Added
