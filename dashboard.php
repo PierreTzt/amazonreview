@@ -198,7 +198,7 @@ $utilisateur = $_SESSION['auth']->id;
 																		<img src="assets/media/avatars/150-11.jpg" alt="" />
 																	</div>
 																	<div class="d-flex justify-content-start flex-column">
-																		<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">'. $info['name'] .'</a>
+																		<a href="view.php?id='. $info['id'] .'" class="text-dark fw-bolder text-hover-primary fs-6">'. $info['name'] .'</a>
 																		<a href="'. $info['url'] .'&tag=infoelections-21" class="text-muted fw-bold text-muted d-block fs-7">Lien Amazon : <i class="fab fa-amazon"></i></a>
 																	</div>
 																</div>

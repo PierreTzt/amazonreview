@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1-alpha] - 2021-08-27
+### Added
+- Ajout du lien dans le dashboard vers la fiche de la commandes avec toutes les infos lié
+
+### Changed
+- Changement complet de la page view
+- Changement de la numérotation de version pour coller a une gestion sémantique de version
+
+### Removed
+- form_merci.html
+
+
 ## [2.2] - 2021-08-26
 ### Changed
 - Changement du formulaire de modification de commande
