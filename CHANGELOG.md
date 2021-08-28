@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1-alpha] - 2021-08-28
+### Added
+- Ajout du numéro de version dans le footer
+
+### Changed
+- Correction de certaines fautes
+- Changement de certain libélé
+- Suppression du SVG pour le remplacé par une Font Awesome
+- Finalisation complete de la partie information des commandes dans le dashboard
+
+### Deprecated
+- Suppresion du bouton pour supprimer les commandes
+
+### Removed
+- Suppression de l'image avant le nom du produit dans le dashboard
+- Suppression du svg dans assets/media/icons/duotone/Communication/add_user.svg
+- Suppression du svg dans assets/media/icons/duotone/Communication/write.svg
+- Suppression du svg dans assets/media/icons/duotone/Shopping/Cart4.svg
+- Suppression du svg dans assets/media/icons/duotone/General/Trash.svg
+
 ## [0.1.1-alpha] - 2021-08-27
 ### Added
 - Ajout du lien dans le dashboard vers la fiche de la commandes avec toutes les infos lié
