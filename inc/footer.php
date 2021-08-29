@@ -10,7 +10,7 @@
 			<!--begin::Menu-->
 			<ul class="menu menu-gray-600 menu-hover-primary fw-bold order-1">
 				<li class="menu-item">
-					<a href="https://github.com/PierreTzt/amazonreview" target="_blank" class="menu-link px-2">A propos - v1.1.1-alpha</a>
+					<a href="https://github.com/PierreTzt/amazonreview" target="_blank" class="menu-link px-2">A propos - v1.2.1-alpha</a>
 				</li>
 			</ul>
 			<!--end::Menu-->

@@ -60,15 +60,24 @@ $utilisateur = $_SESSION['auth']->id;
 										<div class="d-flex flex-stack flex-wrap">
 											<div class="me-2">
 												<a href="#" class="text-dark text-hover-primary fw-bolder fs-3">Total des commandes</a>
-													<div class="text-muted fs-7 fw-bold">La dernière commande est de 20 €</div>
-												</div>
-											<div class="fw-bolder fs-3 text-primary">24,500 €</div>
+												<?php
+												// Dernière commande
+												$DCdb = App::getDatabase()->query("SELECT * FROM products WHERE username=$utilisateur ORDER BY id DESC LIMIT 1");
+												while ($last_order = $DCdb->fetch(PDO::FETCH_ASSOC)) {
+												
+												echo'<div class="text-muted fs-7 fw-bold">La dernière commande est de '. $last_order['price'] .' €</div>';
+												}
+												// Total des commandes
+												$TCdb = App::getDatabase()->query("SELECT SUM(price) AS total_orders FROM products WHERE username=$utilisateur");
+												while ($total_orders = $TCdb->fetch(PDO::FETCH_ASSOC)) {
+												
+												echo '</div>
+												<div class="fw-bolder fs-3 text-primary">'. $total_orders['total_orders'] . ' €</div>';
+												}
+											?>
 										</div>
 									</div>
 									<!--end::Stats-->
-									<!--begin::Chart-->
-										<div class="mixed-widget-7-chart card-rounded-bottom" data-kt-chart-color="primary" style="height: 150px"></div>
-									<!--end::Chart-->
 								</div>
 								<!--end::Body-->
 							</div>
@@ -77,7 +86,7 @@ $utilisateur = $_SESSION['auth']->id;
 							<div class="card card-xxl-stretch-50 mb-5 mb-xl-8">
 								<!--begin::Header-->
 								<div class="card-header border-0">
-									<h3 class="card-title fw-bolder text-dark">Todo</h3>
+									<h3 class="card-title fw-bolder text-dark">Avis à laisser</h3>
 								</div>
 								<!--end::Header-->
 								<!--begin::Body-->
