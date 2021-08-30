@@ -11,7 +11,7 @@ require 'inc/header.php';
 		<!--begin::Page title-->
 		<div class="page-title d-flex flex-column me-3">
 			<!--begin::Title-->
-			<h1 class="d-flex text-white fw-bolder my-1 fs-3">Voir une commande</h1>
+			<h1 class="d-flex text-white fw-bolder my-1 fs-3">Modifier une commande</h1>
 			<!--end::Title-->
 			<!--begin::Breadcrumb-->
 			<ul class="breadcrumb breadcrumb-separatorless fw-bold fs-7 my-1">
@@ -26,7 +26,7 @@ require 'inc/header.php';
 			</li>
 			<!--end::Item-->
 			<!--begin::Item-->
-				<li class="breadcrumb-item text-white opacity-75">Voir de commande</li>
+				<li class="breadcrumb-item text-white opacity-75">Modifier une commande</li>
 			<!--end::Item-->
 			</ul>
 			<!--end::Breadcrumb-->
@@ -113,6 +113,27 @@ echo '
                                		<!--begin::Input-->
 									<input type="text" id="price" class="form-control form-control-lg form-control-solid" value="' . $infos['price'] . '" name="price" required="true"/>
 										<!--end::Input--> 
+                           	    </div>
+								<!--end::Prix du produit-->
+								<!--begin::Prix du produit-->
+								<div class="fv-row mb-10">
+                               		<!--begin::Label-->
+									<label class="d-flex align-items-center fs-5 fw-bold mb-2">
+										<span class="required">Etat</span>
+									</label>
+									<!--end::Label-->
+                               		<!--begin::Input-->
+									   <select name="condition" id="condition" class="form-select form-select-solid" aria-label="Select example">
+									   <option>Open this select menu</option>
+									   <option value="1">Commande effectuée</option>
+									   <option value="2">Expédié</option>
+									   <option value="3">En cour de livraisons</option>
+									   <option value="4">En attende de l avis</option>
+									   <option value="5">Avis posté</option>
+									   <option value="6">En attente du remboursement</option>
+									   <option value="7">Remboursé</option>
+								   </select>										
+								   <!--end::Input--> 
                            	    </div>
 								<!--end::Prix du produit-->
 						</div>
