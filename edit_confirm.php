@@ -16,7 +16,7 @@ $expectancy = implode(",",$_POST['expectancy']);
 $refund_type = implode(",",$_POST['refund_type']);
 $condition = $_POST["condition"];
 
-echo $condition;
+echo "UPDATE products SET name = '$name', purchase_date = '$purchase_date', review_date = '$review_date', price = '$price', url = '$url', expectancy ='$expectancy', refund_type = '$refund_type', seller_name = '$seller_name', condition = '$condition', seller_url = '$seller_url' WHERE id = $id";
 
 //if(isset($_POST["resale"]))
 //{
