@@ -123,12 +123,12 @@ echo '
 									</label>
 									<!--end::Label-->
                                		<!--begin::Input-->
-									   <select name="condition" id="condition" class="form-select form-select-solid" aria-label="Select example">
+									   <select name="condition" class="form-select form-select-solid" aria-label="Select example">
 									   <option>Open this select menu</option>
 									   <option value="1">Commande effectuée</option>
 									   <option value="2">Expédié</option>
 									   <option value="3">En cour de livraisons</option>
-									   <option value="4">En attende de l avis</option>
+									   <option value=4>En attende de l avis</option>
 									   <option value="5">Avis posté</option>
 									   <option value="6">En attente du remboursement</option>
 									   <option value="7">Remboursé</option>
