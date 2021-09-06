@@ -106,7 +106,7 @@ $id=$_GET['id'];
 															<td class="text-end">
 																<div class="d-flex flex-column w-100 me-2">
 																	<div class="d-flex flex-stack mb-2">
-																		<span class="text-muted me-2 fs-7 fw-bold">'. $info['condition'] .'test</span>
+																		<span class="text-muted me-2 fs-7 fw-bold">'. $info['eta'] .'test</span>
 																		<span class="text-muted me-2 fs-7 fw-bold">'. date_format($review_date, 'd/m') .'</span>
 																	</div>
 																	<div class="progress h-6px w-100">

@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Ajout d'une nouvelle table dans la base de données ETA en varchar(20)
 
 ### Changed
-- Changement de la valeur condition vers eta dans orders, dashboard, edit_order et edit_confirm
+- Changement de la valeur condition vers eta dans orders, dashboard, edit_order et edit_confirm, view
 
 ### Removed
 - Suppression de la table condition
