@@ -193,7 +193,7 @@ $utilisateur = $_SESSION['auth']->id;
 													$db = App::getDatabase()->query("SELECT * FROM products WHERE username=$utilisateur ORDER BY id DESC LIMIT 6");
 													while ($info = $db->fetch(PDO::FETCH_ASSOC)) {
 													$review_date = date_create($info['review_date']);
-													$eta = $info['condition'];													
+													$eta = $info['eta'];													
 													if( $eta = 1 ) {
 														$eta_info = 'Commande effectuée';
 														$eta_bar = '14.28';

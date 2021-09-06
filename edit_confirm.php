@@ -14,14 +14,14 @@ $seller_name = $_POST["seller_name"];
 $seller_url = $_POST["seller_url"];
 $expectancy = implode(",",$_POST['expectancy']);
 $refund_type = implode(",",$_POST['refund_type']);
-$condition = $_POST["condition"];
+$eta = $_POST["eta"];
 
-echo "UPDATE products SET name = '$name', purchase_date = '$purchase_date', review_date = '$review_date', price = '$price', url = '$url', expectancy ='$expectancy', refund_type = '$refund_type', seller_name = '$seller_name', condition = '$condition', seller_url = '$seller_url' WHERE id = $id";
+echo "UPDATE products SET name = '$name', purchase_date = '$purchase_date', review_date = '$review_date', price = '$price', url = '$url', expectancy ='$expectancy', refund_type = '$refund_type', seller_name = '$seller_name', eta = '$eta', seller_url = '$seller_url' WHERE id = $id";
 
 //if(isset($_POST["resale"]))
 //{
 //    $resale = $_POST["resale"];
-    $db = App::getDatabase()->query("UPDATE products SET name = '$name', purchase_date = '$purchase_date', review_date = '$review_date', price = '$price', url = '$url', expectancy ='$expectancy', refund_type = '$refund_type', seller_name = '$seller_name', condition = '$condition', seller_url = '$seller_url' WHERE id = $id");
+    $db = App::getDatabase()->query("UPDATE products SET name = '$name', purchase_date = '$purchase_date', review_date = '$review_date', price = '$price', url = '$url', expectancy ='$expectancy', refund_type = '$refund_type', seller_name = '$seller_name', eta = '$eta', seller_url = '$seller_url' WHERE id = $id");
 //}
 //else{
 //  $db = App::getDatabase()->query("UPDATE products(name,purchase_date,review_date,price,url,username,refund_type,expectancy,seller_name,seller_url,condition) VALUES('$name','$purchase_date','$review_date','$price','$url','$refund_type','$expectancy','$seller_name','$seller_url','$condition') WHERE id = $id");

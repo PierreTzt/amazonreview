@@ -52,7 +52,7 @@ echo '
 			<!--begin::Col-->
 			<div class="col-xl-6">
 				<!--begin::Tables Widget 9-->
-				<div class="card card-xxl-stretch mb-5 mb-xl-8">
+				<div class="card card-xxl-stretch mb-6 mb-xl-8">
 					<!--begin::Header-->
 						<div class="card-header border-0 pt-5">
 							<h3 class="card-title align-items-start flex-column">
@@ -123,8 +123,8 @@ echo '
 									</label>
 									<!--end::Label-->
                                		<!--begin::Input-->
-									   <select name="condition" class="form-select form-select-solid" aria-label="Select example">
-									   <option>Open this select menu</option>
+									   <select name="eta" class="form-select form-select-solid" aria-label="Select example">
+									   <option>Voir les options</option>
 									   <option value="1">Commande effectuée</option>
 									   <option value="2">Expédié</option>
 									   <option value="3">En cour de livraisons</option>
