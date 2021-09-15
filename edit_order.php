@@ -128,7 +128,7 @@ echo '
 									   <option value="1">Commande effectuée</option>
 									   <option value="2">Expédié</option>
 									   <option value="3">En cour de livraisons</option>
-									   <option value=4>En attende de l avis</option>
+									   <option value="4">En attende de l avis</option>
 									   <option value="5">Avis posté</option>
 									   <option value="6">En attente du remboursement</option>
 									   <option value="7">Remboursé</option>
